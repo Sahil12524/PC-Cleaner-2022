@@ -10,7 +10,6 @@
     'rs.ResizeAllControls(Me)
     'End Sub
 
-    'Hello
     Private Declare Function ShellExecute _
                             Lib "shell32.dll" _
                             Alias "ShellExecuteA" (
