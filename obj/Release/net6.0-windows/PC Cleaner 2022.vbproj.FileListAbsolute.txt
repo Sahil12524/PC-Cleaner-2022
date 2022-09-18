@@ -1,0 +1,18 @@
+E:\Users\sahil\source\repos\PC Cleaner 2022\bin\Release\net6.0-windows\PC Cleaner 2022.exe
+E:\Users\sahil\source\repos\PC Cleaner 2022\bin\Release\net6.0-windows\PC Cleaner 2022.deps.json
+E:\Users\sahil\source\repos\PC Cleaner 2022\bin\Release\net6.0-windows\PC Cleaner 2022.runtimeconfig.json
+E:\Users\sahil\source\repos\PC Cleaner 2022\bin\Release\net6.0-windows\PC Cleaner 2022.dll
+E:\Users\sahil\source\repos\PC Cleaner 2022\bin\Release\net6.0-windows\PC Cleaner 2022.pdb
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\PC Cleaner 2022.vbproj.AssemblyReference.cache
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\PC_Cleaner_2022.Form1.resources
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\PC_Cleaner_2022.Resources.resources
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\PC Cleaner 2022.vbproj.GenerateResource.cache
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\PC Cleaner 2022.GeneratedMSBuildEditorConfig.editorconfig
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\PC Cleaner 2022.AssemblyInfoInputs.cache
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\PC Cleaner 2022.AssemblyInfo.vb
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\PC Cleaner 2022.vbproj.CoreCompileInputs.cache
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\PC Cleaner 2022.dll
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\refint\PC Cleaner 2022.dll
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\PC Cleaner 2022.pdb
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\PC Cleaner 2022.genruntimeconfig.cache
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\ref\PC Cleaner 2022.dll
