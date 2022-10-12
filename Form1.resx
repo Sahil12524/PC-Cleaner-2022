@@ -58,7 +58,12 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="RichTextBox2.Text" xml:space="preserve">
-    <value>version 1.4 change log
+    <value>version 1.4.1 changelog
+1. Minor UI changes.
+2. Added new features to UI, but removed them because they were causing problems.
+3. Increased the size of the tabs to click them easily, before it was difficult to change the tab my clicking them.
+
+version 1.4 changelog
 1. Added the Tabbed Feature.
 2. Added 7 NEW tabs.
 3. Docked majority of the controls, this makes software resizeable according to screens (AKA Responsive Software).
