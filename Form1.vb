@@ -53,25 +53,6 @@
         Process.Start("bin/packetlosstester.bat")
     End Sub
 
-    Private Sub ShutdownBtn_Click(sender As Object, e As EventArgs) Handles ShutdownBtn.Click
-        Process.Start("bin/pcshutdown.bat")
-    End Sub
-
-    Private Sub RestartBtn_Click(sender As Object, e As EventArgs) Handles RestartBtn.Click
-        Process.Start("bin/pcrestart.bat")
-    End Sub
-
-    Private Sub AbortBtn_Click(sender As Object, e As EventArgs) Handles AbortBtn.Click
-        Process.Start("bin/pcabortpowertask.bat")
-    End Sub
-
-    Private Sub btnLogOff_Click(sender As Object, e As EventArgs) Handles btnLogOff.Click
-        Dim result As DialogResult = MessageBox.Show("Are You Sure That You Want To Logoff your PC?", "Logoff Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
-        If result = DialogResult.Yes Then
-            Shell("logoff")
-        End If
-    End Sub
-
     Private Sub btnDiskCleanup_Click(sender As Object, e As EventArgs) Handles btnDiskCleanup.Click
         Shell("cleanmgr.exe")
     End Sub
@@ -91,4 +72,43 @@
         r = ShellExecute(0, "open", "https://www.youtube.com/channel/UCJaYH5KX_21lWfX2Ag3-ocg?sub_confirmation=1", 0, 0, 1)
     End Sub
 
+    Private Sub ShutdownBtn_Click(sender As Object, e As EventArgs) Handles ShutdownBtn.Click
+        Process.Start("bin/pcshutdown.bat")
+    End Sub
+
+    Private Sub RestartBtn_Click(sender As Object, e As EventArgs) Handles RestartBtn.Click
+        Process.Start("bin/pcrestart.bat")
+    End Sub
+
+    Private Sub AbortBtn_Click(sender As Object, e As EventArgs) Handles AbortBtn.Click
+        Process.Start("bin/pcabortpowertask.bat")
+    End Sub
+
+    Private Sub btnLogOff_Click(sender As Object, e As EventArgs) Handles btnLogOff.Click
+        Dim result As DialogResult = MessageBox.Show("Are You Sure That You Want To Logoff your PC?", "Logoff Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If result = DialogResult.Yes Then
+            Shell("logoff")
+        End If
+    End Sub
+
+    Private Sub DisableHpetBtn_Click(sender As Object, e As EventArgs) Handles DisableHpetBtn.Click
+        Process.Start("bin/disablehpet.bat")
+    End Sub
+
+    Private Sub ISLCBtn_Click(sender As Object, e As EventArgs) Handles ISLCBtn.Click
+        Process.Start("bin/ISLC v1.0.2.8/Intelligent standby list cleaner ISLC.exe")
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Hide()
+        Form2.Show()
+    End Sub
+
+    Private Sub Form1_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Me.Dispose()
+    End Sub
+
+    Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Me.Dispose()
+    End Sub
 End Class

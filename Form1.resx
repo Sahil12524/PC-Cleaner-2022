@@ -57,11 +57,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="RichTextBox3.Text" xml:space="preserve">
+    <value>Important Instructions!
+1. Use Game Optimization only when needed.
+2. Either to enable the optimization or to disable it.
+3. The Game Optimization is useful for minimizing lags while gaming, including Input Lags too.
+
+Note:
+1. Disable Hpet should be run only one time, running more than once will corrupt system.
+2. The ISLC should be setup once, you can not setup ISLC again and again, and ISLC will not work if you didn't disable HPET.
+3. The Screenshot way Instructions are useful for those who find difficult to do these things on your own.</value>
+  </data>
   <data name="RichTextBox2.Text" xml:space="preserve">
     <value>version 1.4.1 changelog
 1. Minor UI changes.
 2. Added new features to UI, but removed them because they were causing problems.
-3. Increased the size of the tabs to click them easily, before it was difficult to change the tab my clicking them.
+3. Increased the size of the tabs to click them easily, before it was difficult to change the tab by clicking them.
 
 version 1.4 changelog
 1. Added the Tabbed Feature.
