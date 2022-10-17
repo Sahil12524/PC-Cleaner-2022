@@ -84,6 +84,12 @@ Partial Class Form1
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.TabPage9 = New System.Windows.Forms.TabPage()
+        Me.TabControl2 = New System.Windows.Forms.TabControl()
+        Me.TabPage10 = New System.Windows.Forms.TabPage()
+        Me.TabPage11 = New System.Windows.Forms.TabPage()
+        Me.TabPage12 = New System.Windows.Forms.TabPage()
+        Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -122,6 +128,9 @@ Partial Class Form1
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox6.SuspendLayout()
+        Me.TabPage9.SuspendLayout()
+        Me.TabControl2.SuspendLayout()
+        Me.TabPage12.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -301,6 +310,7 @@ Partial Class Form1
         Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Controls.Add(Me.TabPage5)
         Me.TabControl1.Controls.Add(Me.TabPage6)
+        Me.TabControl1.Controls.Add(Me.TabPage9)
         Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl1.HotTrack = True
         Me.TabControl1.ItemSize = New System.Drawing.Size(90, 30)
@@ -926,6 +936,69 @@ Partial Class Form1
         Me.RichTextBox1.TabIndex = 3
         Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
+        'TabPage9
+        '
+        Me.TabPage9.Controls.Add(Me.TabControl2)
+        Me.TabPage9.Location = New System.Drawing.Point(4, 4)
+        Me.TabPage9.Name = "TabPage9"
+        Me.TabPage9.Size = New System.Drawing.Size(826, 468)
+        Me.TabPage9.TabIndex = 8
+        Me.TabPage9.Text = "TabPage9"
+        Me.TabPage9.UseVisualStyleBackColor = True
+        '
+        'TabControl2
+        '
+        Me.TabControl2.Alignment = System.Windows.Forms.TabAlignment.Bottom
+        Me.TabControl2.Controls.Add(Me.TabPage10)
+        Me.TabControl2.Controls.Add(Me.TabPage11)
+        Me.TabControl2.Controls.Add(Me.TabPage12)
+        Me.TabControl2.Location = New System.Drawing.Point(179, 64)
+        Me.TabControl2.Name = "TabControl2"
+        Me.TabControl2.SelectedIndex = 0
+        Me.TabControl2.Size = New System.Drawing.Size(616, 379)
+        Me.TabControl2.TabIndex = 1
+        '
+        'TabPage10
+        '
+        Me.TabPage10.BackColor = System.Drawing.Color.MediumPurple
+        Me.TabPage10.Location = New System.Drawing.Point(4, 4)
+        Me.TabPage10.Name = "TabPage10"
+        Me.TabPage10.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage10.Size = New System.Drawing.Size(608, 351)
+        Me.TabPage10.TabIndex = 0
+        Me.TabPage10.Text = "Home"
+        '
+        'TabPage11
+        '
+        Me.TabPage11.AutoScroll = True
+        Me.TabPage11.BackColor = System.Drawing.Color.MediumPurple
+        Me.TabPage11.Location = New System.Drawing.Point(4, 4)
+        Me.TabPage11.Name = "TabPage11"
+        Me.TabPage11.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage11.Size = New System.Drawing.Size(608, 351)
+        Me.TabPage11.TabIndex = 1
+        Me.TabPage11.Text = "ISLC Setup"
+        '
+        'TabPage12
+        '
+        Me.TabPage12.AutoScroll = True
+        Me.TabPage12.BackColor = System.Drawing.Color.MediumPurple
+        Me.TabPage12.Controls.Add(Me.Panel7)
+        Me.TabPage12.Location = New System.Drawing.Point(4, 4)
+        Me.TabPage12.Name = "TabPage12"
+        Me.TabPage12.Size = New System.Drawing.Size(608, 351)
+        Me.TabPage12.TabIndex = 2
+        Me.TabPage12.Text = "Game Mode"
+        '
+        'Panel7
+        '
+        Me.Panel7.AutoScroll = True
+        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel7.Location = New System.Drawing.Point(0, 0)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(608, 351)
+        Me.Panel7.TabIndex = 0
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -990,6 +1063,9 @@ Partial Class Form1
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox6.ResumeLayout(False)
+        Me.TabPage9.ResumeLayout(False)
+        Me.TabControl2.ResumeLayout(False)
+        Me.TabPage12.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub

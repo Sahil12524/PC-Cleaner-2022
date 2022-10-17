@@ -9,6 +9,24 @@
     'Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles Me.Resize, MyBase.LocationChanged
     'rs.ResizeAllControls(Me)
     'End Sub
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
+    End Sub
+    Private Sub Form1_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+        Me.Dispose()
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
+    End Sub
+
+    Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Me.Dispose()
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
+    End Sub
 
     Private Declare Function ShellExecute _
                             Lib "shell32.dll" _
@@ -102,13 +120,8 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Hide()
         Form2.Show()
-    End Sub
-
-    Private Sub Form1_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        Me.Dispose()
-    End Sub
-
-    Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
-        Me.Dispose()
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
     End Sub
 End Class

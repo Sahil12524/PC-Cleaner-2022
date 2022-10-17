@@ -7,7 +7,13 @@
     <Compile Update="Form2.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="PC-Cleaner-2022\Form1.vb">
+    <Compile Update="ss_Game_Mode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ss_Home.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="ss_ISLC_Setup.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
