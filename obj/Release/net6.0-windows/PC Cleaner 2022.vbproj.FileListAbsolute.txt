@@ -16,3 +16,7 @@ E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\refint\PC
 E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\PC Cleaner 2022.pdb
 E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\PC Cleaner 2022.genruntimeconfig.cache
 E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\ref\PC Cleaner 2022.dll
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\PC_Cleaner_2022.Form2.resources
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\PC_Cleaner_2022.ss_Game_Mode.resources
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\PC_Cleaner_2022.ss_Home.resources
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Release\net6.0-windows\PC_Cleaner_2022.ss_ISLC_Setup.resources

@@ -69,7 +69,16 @@ Note:
 3. The Screenshot way Instructions are useful for those who find difficult to do these things on your own.</value>
   </data>
   <data name="RichTextBox2.Text" xml:space="preserve">
-    <value>version 1.4.1 changelog
+    <value>version 1.5 changelog
+1. Optimized the RAM usage of the app, there was memory leak in the app now it is Solved.
+2. Added the Games Optimization tab.
+3. Added more new Buttons.
+4. Major UI changes and improvement of Screenshot Way Instructions.
+5. Added the ISLC Software to bin folder of this app.
+6. Added the feature of disabling HPET.
+7. Some minor UI improvements.
+
+version 1.4.1 changelog
 1. Minor UI changes.
 2. Added new features to UI, but removed them because they were causing problems.
 3. Increased the size of the tabs to click them easily, before it was difficult to change the tab by clicking them.
