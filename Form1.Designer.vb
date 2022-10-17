@@ -167,7 +167,7 @@ Partial Class Form1
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(507, 21)
         Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Version 1.4.1"
+        Me.Label1.Text = "Version 1.5"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label2
