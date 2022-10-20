@@ -132,4 +132,8 @@
         Dim r As Long
         r = ShellExecute(0, "open", "https://github.com/Sahil12524/PC-Cleaner-2022/releases", 0, 0, 1)
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Process.Start("bin/restart_DWM.bat")
+    End Sub
 End Class
