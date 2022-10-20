@@ -29,6 +29,7 @@ Partial Class ss_Home
         '
         'Panel4
         '
+        Me.Panel4.AutoScroll = True
         Me.Panel4.Controls.Add(Me.RichTextBox4)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel4.Location = New System.Drawing.Point(0, 0)

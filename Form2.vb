@@ -4,6 +4,7 @@
         GC.Collect()
         GC.WaitForPendingFinalizers()
         GC.Collect()
+        switchPanel(ss_Home)
     End Sub
 
     Sub switchPanel(ByVal panel As Form)

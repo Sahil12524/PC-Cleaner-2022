@@ -23,17 +23,17 @@ Partial Class ss_Game_Mode
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
         Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Panel1
@@ -49,6 +49,16 @@ Partial Class ss_Game_Mode
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(800, 450)
         Me.Panel1.TabIndex = 0
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.Image = Global.PC_Cleaner_2022.My.Resources.Resources.Start_Settings_Gaming_GameMode_GameMode
+        Me.PictureBox9.Location = New System.Drawing.Point(12, 2563)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(1260, 877)
+        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
+        Me.PictureBox9.TabIndex = 5
+        Me.PictureBox9.TabStop = False
         '
         'PictureBox10
         '
@@ -90,16 +100,6 @@ Partial Class ss_Game_Mode
         Me.PictureBox12.TabIndex = 1
         Me.PictureBox12.TabStop = False
         '
-        'PictureBox9
-        '
-        Me.PictureBox9.Image = Global.PC_Cleaner_2022.My.Resources.Resources.Start_Settings_Gaming_GameMode_GameMode
-        Me.PictureBox9.Location = New System.Drawing.Point(12, 2563)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(1260, 877)
-        Me.PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
-        Me.PictureBox9.TabIndex = 5
-        Me.PictureBox9.TabStop = False
-        '
         'ss_Game_Mode
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -110,11 +110,11 @@ Partial Class ss_Game_Mode
         Me.Name = "ss_Game_Mode"
         Me.Text = "ss_Game_Mode"
         Me.Panel1.ResumeLayout(False)
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

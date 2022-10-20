@@ -38,7 +38,7 @@ Partial Class Form2
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(200, 561)
+        Me.Panel5.Size = New System.Drawing.Size(174, 561)
         Me.Panel5.TabIndex = 1
         '
         'TableLayoutPanel1
@@ -49,7 +49,6 @@ Partial Class Form2
         Me.TableLayoutPanel1.Controls.Add(Me.Button1, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Button2, 0, 1)
         Me.TableLayoutPanel1.Controls.Add(Me.Button3, 0, 2)
-        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 4
@@ -57,7 +56,7 @@ Partial Class Form2
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(200, 561)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(174, 561)
         Me.TableLayoutPanel1.TabIndex = 0
         '
         'Button1
@@ -66,7 +65,7 @@ Partial Class Form2
         Me.Button1.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button1.Location = New System.Drawing.Point(3, 3)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(194, 44)
+        Me.Button1.Size = New System.Drawing.Size(168, 44)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Home"
         Me.Button1.UseVisualStyleBackColor = True
@@ -77,7 +76,7 @@ Partial Class Form2
         Me.Button2.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button2.Location = New System.Drawing.Point(3, 53)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(194, 44)
+        Me.Button2.Size = New System.Drawing.Size(168, 44)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "ISLC Setup"
         Me.Button2.UseVisualStyleBackColor = True
@@ -88,7 +87,7 @@ Partial Class Form2
         Me.Button3.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button3.Location = New System.Drawing.Point(3, 103)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(194, 44)
+        Me.Button3.Size = New System.Drawing.Size(168, 44)
         Me.Button3.TabIndex = 2
         Me.Button3.Text = "Game Mode"
         Me.Button3.UseVisualStyleBackColor = True
@@ -97,9 +96,9 @@ Partial Class Form2
         '
         Me.Panel1.AutoScroll = True
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(200, 0)
+        Me.Panel1.Location = New System.Drawing.Point(174, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(584, 561)
+        Me.Panel1.Size = New System.Drawing.Size(871, 561)
         Me.Panel1.TabIndex = 2
         '
         'Form2
@@ -108,7 +107,7 @@ Partial Class Form2
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.MediumPurple
-        Me.ClientSize = New System.Drawing.Size(784, 561)
+        Me.ClientSize = New System.Drawing.Size(1045, 561)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel5)
         Me.DoubleBuffered = True

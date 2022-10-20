@@ -110,7 +110,10 @@
     End Sub
 
     Private Sub DisableHpetBtn_Click(sender As Object, e As EventArgs) Handles DisableHpetBtn.Click
-        Process.Start("bin/disablehpet.bat")
+        Dim result As DialogResult = MessageBox.Show("Are You Sure That You Are Running This For First Time and Never Used This Button Before?", "Hpet Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If result = DialogResult.Yes Then
+            Process.Start("bin/disablehpet.bat")
+        End If
     End Sub
 
     Private Sub ISLCBtn_Click(sender As Object, e As EventArgs) Handles ISLCBtn.Click
@@ -123,5 +126,10 @@
         GC.Collect()
         GC.WaitForPendingFinalizers()
         GC.Collect()
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+        Dim r As Long
+        r = ShellExecute(0, "open", "https://github.com/Sahil12524/PC-Cleaner-2022/releases", 0, 0, 1)
     End Sub
 End Class
