@@ -36,14 +36,14 @@ Partial Class HomeView
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel7 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.PictureBox5 = New System.Windows.Forms.PictureBox()
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Panel7 = New System.Windows.Forms.Panel()
         Me.Panel5.SuspendLayout()
         Me.TableLayoutPanel8.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,11 +55,11 @@ Partial Class HomeView
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
+        Me.Panel7.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel6.SuspendLayout()
-        Me.Panel7.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel5
@@ -219,13 +219,14 @@ Partial Class HomeView
         Me.Panel2.Size = New System.Drawing.Size(800, 450)
         Me.Panel2.TabIndex = 0
         '
-        'Panel3
+        'Panel7
         '
-        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(0, 0)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(800, 100)
-        Me.Panel3.TabIndex = 8
+        Me.Panel7.Controls.Add(Me.TableLayoutPanel3)
+        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel7.Location = New System.Drawing.Point(0, 100)
+        Me.Panel7.Name = "Panel7"
+        Me.Panel7.Size = New System.Drawing.Size(800, 250)
+        Me.Panel7.TabIndex = 10
         '
         'TableLayoutPanel3
         '
@@ -249,9 +250,9 @@ Partial Class HomeView
         '
         Me.PictureBox5.Dock = System.Windows.Forms.DockStyle.Right
         Me.PictureBox5.Image = Global.PC_Cleaner_2022.My.Resources.Resources.hello_47
-        Me.PictureBox5.Location = New System.Drawing.Point(731, 3)
+        Me.PictureBox5.Location = New System.Drawing.Point(705, 3)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(66, 244)
+        Me.PictureBox5.Size = New System.Drawing.Size(92, 244)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox5.TabIndex = 4
         Me.PictureBox5.TabStop = False
@@ -262,7 +263,7 @@ Partial Class HomeView
         Me.PictureBox8.Image = Global.PC_Cleaner_2022.My.Resources.Resources.pixel_Heart
         Me.PictureBox8.Location = New System.Drawing.Point(3, 3)
         Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(64, 244)
+        Me.PictureBox8.Size = New System.Drawing.Size(85, 244)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox8.TabIndex = 0
         Me.PictureBox8.TabStop = False
@@ -277,6 +278,14 @@ Partial Class HomeView
         Me.Label5.TabIndex = 1
         Me.Label5.Text = "Welcome"
         Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Panel3
+        '
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(800, 100)
+        Me.Panel3.TabIndex = 8
         '
         'Panel6
         '
@@ -298,15 +307,6 @@ Partial Class HomeView
         Me.Button2.Text = "Check for latest releases"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Panel7
-        '
-        Me.Panel7.Controls.Add(Me.TableLayoutPanel3)
-        Me.Panel7.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel7.Location = New System.Drawing.Point(0, 100)
-        Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(800, 250)
-        Me.Panel7.TabIndex = 10
-        '
         'HomeView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -326,12 +326,12 @@ Partial Class HomeView
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
+        Me.Panel7.ResumeLayout(False)
+        Me.Panel7.PerformLayout()
         Me.TableLayoutPanel3.ResumeLayout(False)
         CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel6.ResumeLayout(False)
-        Me.Panel7.ResumeLayout(False)
-        Me.Panel7.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub

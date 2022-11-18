@@ -29,17 +29,17 @@ Partial Class MainPage
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TabPage7 = New System.Windows.Forms.TabPage()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TempRemoveBtn = New System.Windows.Forms.Button()
         Me.SSDTrimBtn = New System.Windows.Forms.Button()
         Me.WindowsUpdateCacheBtn = New System.Windows.Forms.Button()
         Me.CheckDiskErrorBtn = New System.Windows.Forms.Button()
-        Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.TabPage7 = New System.Windows.Forms.TabPage()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
@@ -83,25 +83,25 @@ Partial Class MainPage
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Panel7 = New System.Windows.Forms.Panel()
-        Me.Button12 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.btnAbout = New System.Windows.Forms.Button()
+        Me.btnWhatsNew = New System.Windows.Forms.Button()
+        Me.btnOtherOptions = New System.Windows.Forms.Button()
+        Me.btnGameOptimization = New System.Windows.Forms.Button()
+        Me.btnPowerOptions = New System.Windows.Forms.Button()
+        Me.btnNetTools = New System.Windows.Forms.Button()
+        Me.btnBasicTools = New System.Windows.Forms.Button()
+        Me.btnHome = New System.Windows.Forms.Button()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.TableLayoutPanel5.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox1.SuspendLayout()
-        Me.TableLayoutPanel1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
         Me.TabPage7.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.TabPage1.SuspendLayout()
+        Me.GroupBox1.SuspendLayout()
+        Me.TableLayoutPanel1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
@@ -218,6 +218,69 @@ Partial Class MainPage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'TabControl1
+        '
+        Me.TabControl1.Alignment = System.Windows.Forms.TabAlignment.Bottom
+        Me.TabControl1.Controls.Add(Me.TabPage7)
+        Me.TabControl1.Controls.Add(Me.TabPage1)
+        Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.TabPage3)
+        Me.TabControl1.Controls.Add(Me.TabPage8)
+        Me.TabControl1.Controls.Add(Me.TabPage4)
+        Me.TabControl1.Controls.Add(Me.TabPage5)
+        Me.TabControl1.Controls.Add(Me.TabPage6)
+        Me.TabControl1.HotTrack = True
+        Me.TabControl1.ItemSize = New System.Drawing.Size(90, 30)
+        Me.TabControl1.Location = New System.Drawing.Point(0, 0)
+        Me.TabControl1.Multiline = True
+        Me.TabControl1.Name = "TabControl1"
+        Me.TabControl1.RightToLeftLayout = True
+        Me.TabControl1.SelectedIndex = 0
+        Me.TabControl1.Size = New System.Drawing.Size(603, 453)
+        Me.TabControl1.TabIndex = 13
+        '
+        'TabPage7
+        '
+        Me.TabPage7.AutoScroll = True
+        Me.TabPage7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TabPage7.Controls.Add(Me.Panel2)
+        Me.TabPage7.ImageKey = "(none)"
+        Me.TabPage7.Location = New System.Drawing.Point(4, 4)
+        Me.TabPage7.Name = "TabPage7"
+        Me.TabPage7.Size = New System.Drawing.Size(595, 415)
+        Me.TabPage7.TabIndex = 6
+        Me.TabPage7.Text = "Home"
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.Panel6)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(595, 415)
+        Me.Panel2.TabIndex = 3
+        '
+        'Panel6
+        '
+        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel6.Location = New System.Drawing.Point(0, 0)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(595, 415)
+        Me.Panel6.TabIndex = 7
+        '
+        'TabPage1
+        '
+        Me.TabPage1.AutoScroll = True
+        Me.TabPage1.BackColor = System.Drawing.Color.MediumSeaGreen
+        Me.TabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
+        Me.TabPage1.Controls.Add(Me.GroupBox1)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 4)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(595, 415)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "Basic Tools"
+        '
         'GroupBox1
         '
         Me.GroupBox1.AutoSize = True
@@ -226,7 +289,7 @@ Partial Class MainPage
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.GroupBox1.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(601, 452)
+        Me.GroupBox1.Size = New System.Drawing.Size(589, 409)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Cache Cleanup"
@@ -247,7 +310,7 @@ Partial Class MainPage
         Me.TableLayoutPanel1.RowCount = 2
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(595, 419)
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(583, 376)
         Me.TableLayoutPanel1.TabIndex = 13
         '
         'TempRemoveBtn
@@ -257,7 +320,7 @@ Partial Class MainPage
         Me.TempRemoveBtn.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.TempRemoveBtn.Location = New System.Drawing.Point(3, 3)
         Me.TempRemoveBtn.Name = "TempRemoveBtn"
-        Me.TempRemoveBtn.Size = New System.Drawing.Size(291, 203)
+        Me.TempRemoveBtn.Size = New System.Drawing.Size(285, 182)
         Me.TempRemoveBtn.TabIndex = 1
         Me.TempRemoveBtn.Text = "Temp Files Remove"
         Me.TempRemoveBtn.UseVisualStyleBackColor = True
@@ -267,9 +330,9 @@ Partial Class MainPage
         Me.SSDTrimBtn.AutoEllipsis = True
         Me.SSDTrimBtn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.SSDTrimBtn.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.SSDTrimBtn.Location = New System.Drawing.Point(300, 212)
+        Me.SSDTrimBtn.Location = New System.Drawing.Point(294, 191)
         Me.SSDTrimBtn.Name = "SSDTrimBtn"
-        Me.SSDTrimBtn.Size = New System.Drawing.Size(292, 204)
+        Me.SSDTrimBtn.Size = New System.Drawing.Size(286, 182)
         Me.SSDTrimBtn.TabIndex = 3
         Me.SSDTrimBtn.Text = "SSD Trim Only C Drive"
         Me.SSDTrimBtn.UseVisualStyleBackColor = True
@@ -279,9 +342,9 @@ Partial Class MainPage
         Me.WindowsUpdateCacheBtn.AutoEllipsis = True
         Me.WindowsUpdateCacheBtn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.WindowsUpdateCacheBtn.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.WindowsUpdateCacheBtn.Location = New System.Drawing.Point(300, 3)
+        Me.WindowsUpdateCacheBtn.Location = New System.Drawing.Point(294, 3)
         Me.WindowsUpdateCacheBtn.Name = "WindowsUpdateCacheBtn"
-        Me.WindowsUpdateCacheBtn.Size = New System.Drawing.Size(292, 203)
+        Me.WindowsUpdateCacheBtn.Size = New System.Drawing.Size(286, 182)
         Me.WindowsUpdateCacheBtn.TabIndex = 0
         Me.WindowsUpdateCacheBtn.Text = "Windows Update Cache Remove"
         Me.WindowsUpdateCacheBtn.UseVisualStyleBackColor = True
@@ -291,75 +354,12 @@ Partial Class MainPage
         Me.CheckDiskErrorBtn.AutoEllipsis = True
         Me.CheckDiskErrorBtn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.CheckDiskErrorBtn.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CheckDiskErrorBtn.Location = New System.Drawing.Point(3, 212)
+        Me.CheckDiskErrorBtn.Location = New System.Drawing.Point(3, 191)
         Me.CheckDiskErrorBtn.Name = "CheckDiskErrorBtn"
-        Me.CheckDiskErrorBtn.Size = New System.Drawing.Size(291, 204)
+        Me.CheckDiskErrorBtn.Size = New System.Drawing.Size(285, 182)
         Me.CheckDiskErrorBtn.TabIndex = 2
         Me.CheckDiskErrorBtn.Text = "Check Disk Errors Only C Drive"
         Me.CheckDiskErrorBtn.UseVisualStyleBackColor = True
-        '
-        'TabControl1
-        '
-        Me.TabControl1.Alignment = System.Windows.Forms.TabAlignment.Bottom
-        Me.TabControl1.Controls.Add(Me.TabPage7)
-        Me.TabControl1.Controls.Add(Me.TabPage1)
-        Me.TabControl1.Controls.Add(Me.TabPage2)
-        Me.TabControl1.Controls.Add(Me.TabPage3)
-        Me.TabControl1.Controls.Add(Me.TabPage8)
-        Me.TabControl1.Controls.Add(Me.TabPage4)
-        Me.TabControl1.Controls.Add(Me.TabPage5)
-        Me.TabControl1.Controls.Add(Me.TabPage6)
-        Me.TabControl1.HotTrack = True
-        Me.TabControl1.ItemSize = New System.Drawing.Size(90, 30)
-        Me.TabControl1.Location = New System.Drawing.Point(0, 0)
-        Me.TabControl1.Multiline = True
-        Me.TabControl1.Name = "TabControl1"
-        Me.TabControl1.RightToLeftLayout = True
-        Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(491, 363)
-        Me.TabControl1.TabIndex = 13
-        '
-        'TabPage7
-        '
-        Me.TabPage7.AutoScroll = True
-        Me.TabPage7.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TabPage7.Controls.Add(Me.Panel2)
-        Me.TabPage7.ImageKey = "(none)"
-        Me.TabPage7.Location = New System.Drawing.Point(4, 4)
-        Me.TabPage7.Name = "TabPage7"
-        Me.TabPage7.Size = New System.Drawing.Size(483, 295)
-        Me.TabPage7.TabIndex = 6
-        Me.TabPage7.Text = "Home"
-        '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.Panel6)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(483, 295)
-        Me.Panel2.TabIndex = 3
-        '
-        'Panel6
-        '
-        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel6.Location = New System.Drawing.Point(0, 0)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(483, 295)
-        Me.Panel6.TabIndex = 7
-        '
-        'TabPage1
-        '
-        Me.TabPage1.AutoScroll = True
-        Me.TabPage1.BackColor = System.Drawing.Color.MediumSeaGreen
-        Me.TabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.TabPage1.Controls.Add(Me.GroupBox1)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 4)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(607, 458)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Basic Tools"
         '
         'TabPage2
         '
@@ -369,7 +369,7 @@ Partial Class MainPage
         Me.TabPage2.Location = New System.Drawing.Point(4, 4)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(607, 458)
+        Me.TabPage2.Size = New System.Drawing.Size(595, 415)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Net Tools"
         '
@@ -381,7 +381,7 @@ Partial Class MainPage
         Me.GroupBox2.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.GroupBox2.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(601, 452)
+        Me.GroupBox2.Size = New System.Drawing.Size(589, 409)
         Me.GroupBox2.TabIndex = 3
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Net Tools"
@@ -402,7 +402,7 @@ Partial Class MainPage
         Me.TableLayoutPanel2.RowCount = 2
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(595, 419)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(583, 376)
         Me.TableLayoutPanel2.TabIndex = 13
         '
         'btnPacketLossTester
@@ -410,9 +410,9 @@ Partial Class MainPage
         Me.btnPacketLossTester.AutoEllipsis = True
         Me.btnPacketLossTester.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnPacketLossTester.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnPacketLossTester.Location = New System.Drawing.Point(300, 212)
+        Me.btnPacketLossTester.Location = New System.Drawing.Point(294, 191)
         Me.btnPacketLossTester.Name = "btnPacketLossTester"
-        Me.btnPacketLossTester.Size = New System.Drawing.Size(292, 204)
+        Me.btnPacketLossTester.Size = New System.Drawing.Size(286, 182)
         Me.btnPacketLossTester.TabIndex = 7
         Me.btnPacketLossTester.Text = "Packet Loss Tester"
         Me.btnPacketLossTester.UseVisualStyleBackColor = True
@@ -424,7 +424,7 @@ Partial Class MainPage
         Me.NetDisableBtn.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.NetDisableBtn.Location = New System.Drawing.Point(3, 3)
         Me.NetDisableBtn.Name = "NetDisableBtn"
-        Me.NetDisableBtn.Size = New System.Drawing.Size(291, 203)
+        Me.NetDisableBtn.Size = New System.Drawing.Size(285, 182)
         Me.NetDisableBtn.TabIndex = 4
         Me.NetDisableBtn.Text = "Disable Net"
         Me.NetDisableBtn.UseVisualStyleBackColor = True
@@ -434,9 +434,9 @@ Partial Class MainPage
         Me.FlushDnsBtn.AutoEllipsis = True
         Me.FlushDnsBtn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.FlushDnsBtn.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.FlushDnsBtn.Location = New System.Drawing.Point(300, 3)
+        Me.FlushDnsBtn.Location = New System.Drawing.Point(294, 3)
         Me.FlushDnsBtn.Name = "FlushDnsBtn"
-        Me.FlushDnsBtn.Size = New System.Drawing.Size(292, 203)
+        Me.FlushDnsBtn.Size = New System.Drawing.Size(286, 182)
         Me.FlushDnsBtn.TabIndex = 5
         Me.FlushDnsBtn.Text = "Flush DNS"
         Me.FlushDnsBtn.UseVisualStyleBackColor = True
@@ -446,9 +446,9 @@ Partial Class MainPage
         Me.NetEnableBtn.AutoEllipsis = True
         Me.NetEnableBtn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.NetEnableBtn.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.NetEnableBtn.Location = New System.Drawing.Point(3, 212)
+        Me.NetEnableBtn.Location = New System.Drawing.Point(3, 191)
         Me.NetEnableBtn.Name = "NetEnableBtn"
-        Me.NetEnableBtn.Size = New System.Drawing.Size(291, 204)
+        Me.NetEnableBtn.Size = New System.Drawing.Size(285, 182)
         Me.NetEnableBtn.TabIndex = 6
         Me.NetEnableBtn.Text = "Enable Net"
         Me.NetEnableBtn.UseVisualStyleBackColor = True
@@ -460,7 +460,7 @@ Partial Class MainPage
         Me.TabPage3.Controls.Add(Me.GroupBox3)
         Me.TabPage3.Location = New System.Drawing.Point(4, 4)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(607, 458)
+        Me.TabPage3.Size = New System.Drawing.Size(595, 415)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Power Options"
         '
@@ -472,7 +472,7 @@ Partial Class MainPage
         Me.GroupBox3.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.GroupBox3.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(607, 458)
+        Me.GroupBox3.Size = New System.Drawing.Size(595, 415)
         Me.GroupBox3.TabIndex = 0
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "Power Options"
@@ -493,7 +493,7 @@ Partial Class MainPage
         Me.TableLayoutPanel3.RowCount = 2
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel3.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel3.Size = New System.Drawing.Size(601, 425)
+        Me.TableLayoutPanel3.Size = New System.Drawing.Size(589, 382)
         Me.TableLayoutPanel3.TabIndex = 19
         '
         'btnLogOff
@@ -501,9 +501,9 @@ Partial Class MainPage
         Me.btnLogOff.AutoEllipsis = True
         Me.btnLogOff.Dock = System.Windows.Forms.DockStyle.Fill
         Me.btnLogOff.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnLogOff.Location = New System.Drawing.Point(303, 215)
+        Me.btnLogOff.Location = New System.Drawing.Point(297, 194)
         Me.btnLogOff.Name = "btnLogOff"
-        Me.btnLogOff.Size = New System.Drawing.Size(295, 207)
+        Me.btnLogOff.Size = New System.Drawing.Size(289, 185)
         Me.btnLogOff.TabIndex = 10
         Me.btnLogOff.Text = "Log Off (Quick Restart)"
         Me.btnLogOff.UseVisualStyleBackColor = True
@@ -515,7 +515,7 @@ Partial Class MainPage
         Me.ShutdownBtn.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ShutdownBtn.Location = New System.Drawing.Point(3, 3)
         Me.ShutdownBtn.Name = "ShutdownBtn"
-        Me.ShutdownBtn.Size = New System.Drawing.Size(294, 206)
+        Me.ShutdownBtn.Size = New System.Drawing.Size(288, 185)
         Me.ShutdownBtn.TabIndex = 7
         Me.ShutdownBtn.Text = "Shutdown"
         Me.ShutdownBtn.UseVisualStyleBackColor = True
@@ -525,9 +525,9 @@ Partial Class MainPage
         Me.AbortBtn.AutoEllipsis = True
         Me.AbortBtn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.AbortBtn.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.AbortBtn.Location = New System.Drawing.Point(3, 215)
+        Me.AbortBtn.Location = New System.Drawing.Point(3, 194)
         Me.AbortBtn.Name = "AbortBtn"
-        Me.AbortBtn.Size = New System.Drawing.Size(294, 207)
+        Me.AbortBtn.Size = New System.Drawing.Size(288, 185)
         Me.AbortBtn.TabIndex = 9
         Me.AbortBtn.Text = "Abort Shutdown or Restart"
         Me.AbortBtn.UseVisualStyleBackColor = True
@@ -537,9 +537,9 @@ Partial Class MainPage
         Me.RestartBtn.AutoEllipsis = True
         Me.RestartBtn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RestartBtn.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.RestartBtn.Location = New System.Drawing.Point(303, 3)
+        Me.RestartBtn.Location = New System.Drawing.Point(297, 3)
         Me.RestartBtn.Name = "RestartBtn"
-        Me.RestartBtn.Size = New System.Drawing.Size(295, 206)
+        Me.RestartBtn.Size = New System.Drawing.Size(289, 185)
         Me.RestartBtn.TabIndex = 8
         Me.RestartBtn.Text = "Restart"
         Me.RestartBtn.UseVisualStyleBackColor = True
@@ -551,7 +551,7 @@ Partial Class MainPage
         Me.TabPage8.Controls.Add(Me.GroupBox7)
         Me.TabPage8.Location = New System.Drawing.Point(4, 4)
         Me.TabPage8.Name = "TabPage8"
-        Me.TabPage8.Size = New System.Drawing.Size(607, 458)
+        Me.TabPage8.Size = New System.Drawing.Size(595, 415)
         Me.TabPage8.TabIndex = 7
         Me.TabPage8.Text = "Games Optimization"
         '
@@ -563,7 +563,7 @@ Partial Class MainPage
         Me.GroupBox7.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.GroupBox7.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox7.Name = "GroupBox7"
-        Me.GroupBox7.Size = New System.Drawing.Size(607, 458)
+        Me.GroupBox7.Size = New System.Drawing.Size(595, 415)
         Me.GroupBox7.TabIndex = 0
         Me.GroupBox7.TabStop = False
         Me.GroupBox7.Text = "Games Optimization"
@@ -582,8 +582,8 @@ Partial Class MainPage
         '
         Me.SplitContainer1.Panel2.AutoScroll = True
         Me.SplitContainer1.Panel2.Controls.Add(Me.RichTextBox3)
-        Me.SplitContainer1.Size = New System.Drawing.Size(601, 425)
-        Me.SplitContainer1.SplitterDistance = 376
+        Me.SplitContainer1.Size = New System.Drawing.Size(589, 382)
+        Me.SplitContainer1.SplitterDistance = 367
         Me.SplitContainer1.TabIndex = 3
         '
         'Panel3
@@ -593,7 +593,7 @@ Partial Class MainPage
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(376, 425)
+        Me.Panel3.Size = New System.Drawing.Size(367, 382)
         Me.Panel3.TabIndex = 0
         '
         'TableLayoutPanel9
@@ -614,7 +614,7 @@ Partial Class MainPage
         Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
         Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667!))
         Me.TableLayoutPanel9.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
-        Me.TableLayoutPanel9.Size = New System.Drawing.Size(376, 425)
+        Me.TableLayoutPanel9.Size = New System.Drawing.Size(367, 382)
         Me.TableLayoutPanel9.TabIndex = 3
         '
         'DisableHpetBtn
@@ -624,7 +624,7 @@ Partial Class MainPage
         Me.DisableHpetBtn.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.DisableHpetBtn.Location = New System.Drawing.Point(3, 3)
         Me.DisableHpetBtn.Name = "DisableHpetBtn"
-        Me.DisableHpetBtn.Size = New System.Drawing.Size(490, 64)
+        Me.DisableHpetBtn.Size = New System.Drawing.Size(490, 57)
         Me.DisableHpetBtn.TabIndex = 0
         Me.DisableHpetBtn.Text = "Disable HPET"
         Me.DisableHpetBtn.UseVisualStyleBackColor = True
@@ -634,9 +634,9 @@ Partial Class MainPage
         Me.ISLCBtn.AutoEllipsis = True
         Me.ISLCBtn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ISLCBtn.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.ISLCBtn.Location = New System.Drawing.Point(3, 73)
+        Me.ISLCBtn.Location = New System.Drawing.Point(3, 66)
         Me.ISLCBtn.Name = "ISLCBtn"
-        Me.ISLCBtn.Size = New System.Drawing.Size(490, 64)
+        Me.ISLCBtn.Size = New System.Drawing.Size(490, 57)
         Me.ISLCBtn.TabIndex = 2
         Me.ISLCBtn.Text = "Intelligent Standby list cleaner (ISLC)"
         Me.ISLCBtn.UseVisualStyleBackColor = True
@@ -646,9 +646,9 @@ Partial Class MainPage
         Me.Button2.AutoEllipsis = True
         Me.Button2.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Button2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.Location = New System.Drawing.Point(3, 213)
+        Me.Button2.Location = New System.Drawing.Point(3, 192)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(490, 64)
+        Me.Button2.Size = New System.Drawing.Size(490, 57)
         Me.Button2.TabIndex = 1
         Me.Button2.Text = "Screenshot Way Instructions"
         Me.Button2.UseVisualStyleBackColor = True
@@ -657,9 +657,9 @@ Partial Class MainPage
         '
         Me.Button4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Button4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button4.Location = New System.Drawing.Point(3, 143)
+        Me.Button4.Location = New System.Drawing.Point(3, 129)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(490, 64)
+        Me.Button4.Size = New System.Drawing.Size(490, 57)
         Me.Button4.TabIndex = 3
         Me.Button4.Text = "Restart dwm.exe (Desktop Window Manager)"
         Me.Button4.UseVisualStyleBackColor = True
@@ -672,7 +672,7 @@ Partial Class MainPage
         Me.RichTextBox3.Location = New System.Drawing.Point(0, 0)
         Me.RichTextBox3.Name = "RichTextBox3"
         Me.RichTextBox3.ReadOnly = True
-        Me.RichTextBox3.Size = New System.Drawing.Size(221, 425)
+        Me.RichTextBox3.Size = New System.Drawing.Size(218, 382)
         Me.RichTextBox3.TabIndex = 0
         Me.RichTextBox3.Text = resources.GetString("RichTextBox3.Text")
         '
@@ -683,7 +683,7 @@ Partial Class MainPage
         Me.TabPage4.Controls.Add(Me.GroupBox4)
         Me.TabPage4.Location = New System.Drawing.Point(4, 4)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(607, 458)
+        Me.TabPage4.Size = New System.Drawing.Size(595, 415)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Other Options"
         '
@@ -695,7 +695,7 @@ Partial Class MainPage
         Me.GroupBox4.Font = New System.Drawing.Font("Segoe UI", 15.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.GroupBox4.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(607, 458)
+        Me.GroupBox4.Size = New System.Drawing.Size(595, 415)
         Me.GroupBox4.TabIndex = 13
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Other Options"
@@ -716,16 +716,16 @@ Partial Class MainPage
         Me.TableLayoutPanel4.RowCount = 2
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel4.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel4.Size = New System.Drawing.Size(601, 425)
+        Me.TableLayoutPanel4.Size = New System.Drawing.Size(589, 382)
         Me.TableLayoutPanel4.TabIndex = 13
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label3.Location = New System.Drawing.Point(303, 212)
+        Me.Label3.Location = New System.Drawing.Point(297, 191)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(295, 213)
+        Me.Label3.Size = New System.Drawing.Size(289, 191)
         Me.Label3.TabIndex = 13
         Me.Label3.Text = "Coming Soon!"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -737,7 +737,7 @@ Partial Class MainPage
         Me.btnDiskCleanup.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnDiskCleanup.Location = New System.Drawing.Point(3, 3)
         Me.btnDiskCleanup.Name = "btnDiskCleanup"
-        Me.btnDiskCleanup.Size = New System.Drawing.Size(294, 206)
+        Me.btnDiskCleanup.Size = New System.Drawing.Size(288, 185)
         Me.btnDiskCleanup.TabIndex = 12
         Me.btnDiskCleanup.Text = "Disk Clean-up"
         Me.btnDiskCleanup.UseVisualStyleBackColor = True
@@ -747,9 +747,9 @@ Partial Class MainPage
         Me.NeedHelpBtn.AutoEllipsis = True
         Me.NeedHelpBtn.Dock = System.Windows.Forms.DockStyle.Fill
         Me.NeedHelpBtn.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.NeedHelpBtn.Location = New System.Drawing.Point(303, 3)
+        Me.NeedHelpBtn.Location = New System.Drawing.Point(297, 3)
         Me.NeedHelpBtn.Name = "NeedHelpBtn"
-        Me.NeedHelpBtn.Size = New System.Drawing.Size(295, 206)
+        Me.NeedHelpBtn.Size = New System.Drawing.Size(289, 185)
         Me.NeedHelpBtn.TabIndex = 11
         Me.NeedHelpBtn.Text = "Need Help ?"
         Me.NeedHelpBtn.UseVisualStyleBackColor = True
@@ -758,9 +758,9 @@ Partial Class MainPage
         '
         Me.Button3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Button3.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button3.Location = New System.Drawing.Point(3, 215)
+        Me.Button3.Location = New System.Drawing.Point(3, 194)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(294, 207)
+        Me.Button3.Size = New System.Drawing.Size(288, 185)
         Me.Button3.TabIndex = 14
         Me.Button3.Text = "Disk Defragment"
         Me.Button3.UseVisualStyleBackColor = True
@@ -771,7 +771,7 @@ Partial Class MainPage
         Me.TabPage5.Controls.Add(Me.RichTextBox2)
         Me.TabPage5.Location = New System.Drawing.Point(4, 4)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Size = New System.Drawing.Size(607, 458)
+        Me.TabPage5.Size = New System.Drawing.Size(595, 415)
         Me.TabPage5.TabIndex = 5
         Me.TabPage5.Text = "What's New"
         Me.TabPage5.UseVisualStyleBackColor = True
@@ -785,7 +785,7 @@ Partial Class MainPage
         Me.RichTextBox2.Location = New System.Drawing.Point(0, 0)
         Me.RichTextBox2.Name = "RichTextBox2"
         Me.RichTextBox2.ReadOnly = True
-        Me.RichTextBox2.Size = New System.Drawing.Size(607, 458)
+        Me.RichTextBox2.Size = New System.Drawing.Size(595, 415)
         Me.RichTextBox2.TabIndex = 2
         Me.RichTextBox2.Text = resources.GetString("RichTextBox2.Text")
         '
@@ -796,7 +796,7 @@ Partial Class MainPage
         Me.TabPage6.Controls.Add(Me.TableLayoutPanel6)
         Me.TabPage6.Location = New System.Drawing.Point(4, 4)
         Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Size = New System.Drawing.Size(607, 458)
+        Me.TabPage6.Size = New System.Drawing.Size(595, 415)
         Me.TabPage6.TabIndex = 4
         Me.TabPage6.Text = "About"
         '
@@ -813,7 +813,7 @@ Partial Class MainPage
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
         Me.TableLayoutPanel6.RowCount = 1
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel6.Size = New System.Drawing.Size(607, 458)
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(595, 415)
         Me.TableLayoutPanel6.TabIndex = 1
         '
         'GroupBox5
@@ -822,7 +822,7 @@ Partial Class MainPage
         Me.GroupBox5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.GroupBox5.Location = New System.Drawing.Point(3, 3)
         Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(297, 452)
+        Me.GroupBox5.Size = New System.Drawing.Size(291, 409)
         Me.GroupBox5.TabIndex = 0
         Me.GroupBox5.TabStop = False
         Me.GroupBox5.Text = "About"
@@ -842,16 +842,16 @@ Partial Class MainPage
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.0!))
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.81818!))
-        Me.TableLayoutPanel7.Size = New System.Drawing.Size(291, 430)
+        Me.TableLayoutPanel7.Size = New System.Drawing.Size(285, 387)
         Me.TableLayoutPanel7.TabIndex = 9
         '
         'PictureBox5
         '
         Me.PictureBox5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox5.Image = Global.PC_Cleaner_2022.My.Resources.Resources.PayPal_Donate_Button_Transparent
-        Me.PictureBox5.Location = New System.Drawing.Point(3, 146)
+        Me.PictureBox5.Location = New System.Drawing.Point(3, 131)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(285, 165)
+        Me.PictureBox5.Size = New System.Drawing.Size(279, 148)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox5.TabIndex = 7
         Me.PictureBox5.TabStop = False
@@ -860,9 +860,9 @@ Partial Class MainPage
         '
         Me.PictureBox3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox3.Image = Global.PC_Cleaner_2022.My.Resources.Resources.subscribe_PNG29
-        Me.PictureBox3.Location = New System.Drawing.Point(3, 317)
+        Me.PictureBox3.Location = New System.Drawing.Point(3, 285)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(285, 110)
+        Me.PictureBox3.Size = New System.Drawing.Size(279, 99)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 5
         Me.PictureBox3.TabStop = False
@@ -873,7 +873,7 @@ Partial Class MainPage
         Me.PictureBox4.Image = Global.PC_Cleaner_2022.My.Resources.Resources.cleaning_broom
         Me.PictureBox4.Location = New System.Drawing.Point(3, 3)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(285, 137)
+        Me.PictureBox4.Size = New System.Drawing.Size(279, 122)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 6
         Me.PictureBox4.TabStop = False
@@ -882,9 +882,9 @@ Partial Class MainPage
         '
         Me.GroupBox6.Controls.Add(Me.RichTextBox1)
         Me.GroupBox6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.GroupBox6.Location = New System.Drawing.Point(306, 3)
+        Me.GroupBox6.Location = New System.Drawing.Point(300, 3)
         Me.GroupBox6.Name = "GroupBox6"
-        Me.GroupBox6.Size = New System.Drawing.Size(298, 452)
+        Me.GroupBox6.Size = New System.Drawing.Size(292, 409)
         Me.GroupBox6.TabIndex = 1
         Me.GroupBox6.TabStop = False
         Me.GroupBox6.Text = "Info"
@@ -898,106 +898,106 @@ Partial Class MainPage
         Me.RichTextBox1.Location = New System.Drawing.Point(3, 19)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.ReadOnly = True
-        Me.RichTextBox1.Size = New System.Drawing.Size(292, 430)
+        Me.RichTextBox1.Size = New System.Drawing.Size(286, 387)
         Me.RichTextBox1.TabIndex = 3
         Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
         'Panel7
         '
         Me.Panel7.AutoScroll = True
-        Me.Panel7.Controls.Add(Me.Button12)
-        Me.Panel7.Controls.Add(Me.Button11)
-        Me.Panel7.Controls.Add(Me.Button10)
-        Me.Panel7.Controls.Add(Me.Button9)
-        Me.Panel7.Controls.Add(Me.Button8)
-        Me.Panel7.Controls.Add(Me.Button7)
-        Me.Panel7.Controls.Add(Me.Button6)
-        Me.Panel7.Controls.Add(Me.Button5)
+        Me.Panel7.Controls.Add(Me.btnAbout)
+        Me.Panel7.Controls.Add(Me.btnWhatsNew)
+        Me.Panel7.Controls.Add(Me.btnOtherOptions)
+        Me.Panel7.Controls.Add(Me.btnGameOptimization)
+        Me.Panel7.Controls.Add(Me.btnPowerOptions)
+        Me.Panel7.Controls.Add(Me.btnNetTools)
+        Me.Panel7.Controls.Add(Me.btnBasicTools)
+        Me.Panel7.Controls.Add(Me.btnHome)
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel7.Location = New System.Drawing.Point(0, 85)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(189, 496)
         Me.Panel7.TabIndex = 14
         '
-        'Button12
+        'btnAbout
         '
-        Me.Button12.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button12.Location = New System.Drawing.Point(0, 290)
-        Me.Button12.Name = "Button12"
-        Me.Button12.Size = New System.Drawing.Size(189, 35)
-        Me.Button12.TabIndex = 7
-        Me.Button12.Text = "About"
-        Me.Button12.UseVisualStyleBackColor = True
+        Me.btnAbout.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnAbout.Location = New System.Drawing.Point(0, 290)
+        Me.btnAbout.Name = "btnAbout"
+        Me.btnAbout.Size = New System.Drawing.Size(189, 35)
+        Me.btnAbout.TabIndex = 7
+        Me.btnAbout.Text = "About"
+        Me.btnAbout.UseVisualStyleBackColor = True
         '
-        'Button11
+        'btnWhatsNew
         '
-        Me.Button11.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button11.Location = New System.Drawing.Point(0, 249)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(189, 35)
-        Me.Button11.TabIndex = 6
-        Me.Button11.Text = "What's New"
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.btnWhatsNew.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnWhatsNew.Location = New System.Drawing.Point(0, 249)
+        Me.btnWhatsNew.Name = "btnWhatsNew"
+        Me.btnWhatsNew.Size = New System.Drawing.Size(189, 35)
+        Me.btnWhatsNew.TabIndex = 6
+        Me.btnWhatsNew.Text = "What's New"
+        Me.btnWhatsNew.UseVisualStyleBackColor = True
         '
-        'Button10
+        'btnOtherOptions
         '
-        Me.Button10.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button10.Location = New System.Drawing.Point(0, 208)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(189, 35)
-        Me.Button10.TabIndex = 5
-        Me.Button10.Text = "Other Options"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.btnOtherOptions.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnOtherOptions.Location = New System.Drawing.Point(0, 208)
+        Me.btnOtherOptions.Name = "btnOtherOptions"
+        Me.btnOtherOptions.Size = New System.Drawing.Size(189, 35)
+        Me.btnOtherOptions.TabIndex = 5
+        Me.btnOtherOptions.Text = "Other Options"
+        Me.btnOtherOptions.UseVisualStyleBackColor = True
         '
-        'Button9
+        'btnGameOptimization
         '
-        Me.Button9.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button9.Location = New System.Drawing.Point(0, 167)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(189, 35)
-        Me.Button9.TabIndex = 4
-        Me.Button9.Text = "Game Optimization"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.btnGameOptimization.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnGameOptimization.Location = New System.Drawing.Point(0, 167)
+        Me.btnGameOptimization.Name = "btnGameOptimization"
+        Me.btnGameOptimization.Size = New System.Drawing.Size(189, 35)
+        Me.btnGameOptimization.TabIndex = 4
+        Me.btnGameOptimization.Text = "Game Optimization"
+        Me.btnGameOptimization.UseVisualStyleBackColor = True
         '
-        'Button8
+        'btnPowerOptions
         '
-        Me.Button8.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button8.Location = New System.Drawing.Point(0, 126)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(189, 35)
-        Me.Button8.TabIndex = 3
-        Me.Button8.Text = "Power Options"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.btnPowerOptions.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnPowerOptions.Location = New System.Drawing.Point(0, 126)
+        Me.btnPowerOptions.Name = "btnPowerOptions"
+        Me.btnPowerOptions.Size = New System.Drawing.Size(189, 35)
+        Me.btnPowerOptions.TabIndex = 3
+        Me.btnPowerOptions.Text = "Power Options"
+        Me.btnPowerOptions.UseVisualStyleBackColor = True
         '
-        'Button7
+        'btnNetTools
         '
-        Me.Button7.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button7.Location = New System.Drawing.Point(0, 85)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(189, 35)
-        Me.Button7.TabIndex = 2
-        Me.Button7.Text = "Net Tools"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.btnNetTools.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnNetTools.Location = New System.Drawing.Point(0, 85)
+        Me.btnNetTools.Name = "btnNetTools"
+        Me.btnNetTools.Size = New System.Drawing.Size(189, 35)
+        Me.btnNetTools.TabIndex = 2
+        Me.btnNetTools.Text = "Net Tools"
+        Me.btnNetTools.UseVisualStyleBackColor = True
         '
-        'Button6
+        'btnBasicTools
         '
-        Me.Button6.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button6.Location = New System.Drawing.Point(0, 44)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(189, 35)
-        Me.Button6.TabIndex = 1
-        Me.Button6.Text = "Basic Tools"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.btnBasicTools.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnBasicTools.Location = New System.Drawing.Point(0, 44)
+        Me.btnBasicTools.Name = "btnBasicTools"
+        Me.btnBasicTools.Size = New System.Drawing.Size(189, 35)
+        Me.btnBasicTools.TabIndex = 1
+        Me.btnBasicTools.Text = "Basic Tools"
+        Me.btnBasicTools.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btnHome
         '
-        Me.Button5.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button5.Location = New System.Drawing.Point(0, 3)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(189, 35)
-        Me.Button5.TabIndex = 0
-        Me.Button5.Text = "Home"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnHome.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnHome.Location = New System.Drawing.Point(0, 3)
+        Me.btnHome.Name = "btnHome"
+        Me.btnHome.Size = New System.Drawing.Size(189, 35)
+        Me.btnHome.TabIndex = 0
+        Me.btnHome.Text = "Home"
+        Me.btnHome.UseVisualStyleBackColor = True
         '
         'Panel8
         '
@@ -1031,14 +1031,14 @@ Partial Class MainPage
         Me.TableLayoutPanel5.PerformLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox1.ResumeLayout(False)
-        Me.GroupBox1.PerformLayout()
-        Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage7.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage1.PerformLayout()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -1080,12 +1080,6 @@ Partial Class MainPage
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents SSDTrimBtn As Button
-    Friend WithEvents CheckDiskErrorBtn As Button
-    Friend WithEvents TempRemoveBtn As Button
-    Friend WithEvents WindowsUpdateCacheBtn As Button
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents TabControl1 As TabControl
     Friend WithEvents TabPage1 As TabPage
     Friend WithEvents TabPage2 As TabPage
@@ -1137,13 +1131,19 @@ Partial Class MainPage
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Panel7 As Panel
-    Friend WithEvents Button6 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents btnBasicTools As Button
+    Friend WithEvents btnHome As Button
     Friend WithEvents Panel8 As Panel
-    Friend WithEvents Button7 As Button
-    Friend WithEvents Button8 As Button
-    Friend WithEvents Button12 As Button
-    Friend WithEvents Button11 As Button
-    Friend WithEvents Button10 As Button
-    Friend WithEvents Button9 As Button
+    Friend WithEvents btnNetTools As Button
+    Friend WithEvents btnPowerOptions As Button
+    Friend WithEvents btnAbout As Button
+    Friend WithEvents btnWhatsNew As Button
+    Friend WithEvents btnOtherOptions As Button
+    Friend WithEvents btnGameOptimization As Button
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
+    Friend WithEvents TempRemoveBtn As Button
+    Friend WithEvents SSDTrimBtn As Button
+    Friend WithEvents WindowsUpdateCacheBtn As Button
+    Friend WithEvents CheckDiskErrorBtn As Button
 End Class

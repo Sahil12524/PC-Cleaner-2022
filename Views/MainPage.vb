@@ -150,39 +150,59 @@
         Shell("dfrgui.exe")
     End Sub
 
-
-    'Subjected to change button names!
-
-
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-
+    Private Sub btnHome_Click(sender As Object, e As EventArgs) Handles btnHome.Click
+        switchPanel(HomeView)
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-
+    Private Sub btnBasicTools_Click(sender As Object, e As EventArgs) Handles btnBasicTools.Click
+        switchPanel(BasicToolsView)
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-
+    Private Sub btnNetTools_Click(sender As Object, e As EventArgs) Handles btnNetTools.Click
+        switchPanel(NetToolsView)
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
     End Sub
 
-    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
-
+    Private Sub btnWhatsNew_Click(sender As Object, e As EventArgs) Handles btnWhatsNew.Click
+        switchPanel(WhatsNewView)
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
     End Sub
 
-    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
-
+    Private Sub btnOtherOptions_Click(sender As Object, e As EventArgs) Handles btnOtherOptions.Click
+        switchPanel(OtherOptionsView)
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
     End Sub
 
-    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
-
+    Private Sub btnGameOptimization_Click(sender As Object, e As EventArgs) Handles btnGameOptimization.Click
+        switchPanel(GamesOptimizationView)
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
     End Sub
 
-    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
-
+    Private Sub btnPowerOptions_Click(sender As Object, e As EventArgs) Handles btnPowerOptions.Click
+        switchPanel(PowerOptionsView)
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
     End Sub
 
-    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
-
+    Private Sub btnAbout_Click(sender As Object, e As EventArgs) Handles btnAbout.Click
+        switchPanel(AboutView)
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
     End Sub
 End Class
