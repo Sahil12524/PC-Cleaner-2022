@@ -2,26 +2,35 @@
 
     'Dim rs As New Resizer
 
-    'Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    'Private Sub MainPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     'rs.FindAllControls(Me)
     'End Sub
 
-    'Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles Me.Resize, MyBase.LocationChanged
+    'Private Sub MainPage_Resize(sender As Object, e As EventArgs) Handles Me.Resize, MyBase.LocationChanged
     'rs.ResizeAllControls(Me)
     'End Sub
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub MainPage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GC.Collect()
         GC.WaitForPendingFinalizers()
         GC.Collect()
+        switchPanel(HomeView)
     End Sub
-    Private Sub Form1_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+    Sub switchPanel(ByVal panel As Form)
+        Panel8.Controls.Clear()
+        panel.TopLevel = False
+        panel.FormBorderStyle = Windows.Forms.FormBorderStyle.None
+        panel.Dock = DockStyle.Fill
+        Panel8.Controls.Add(panel)
+        panel.Show()
+    End Sub
+    Private Sub MainPage_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         Me.Dispose()
         GC.Collect()
         GC.WaitForPendingFinalizers()
         GC.Collect()
     End Sub
 
-    Private Sub Form1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+    Private Sub MainPage_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Me.Dispose()
         GC.Collect()
         GC.WaitForPendingFinalizers()
@@ -128,7 +137,7 @@
         GC.Collect()
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) 
         Dim r As Long
         r = ShellExecute(0, "open", "https://github.com/Sahil12524/PC-Cleaner-2022/releases", 0, 0, 1)
     End Sub
@@ -140,6 +149,10 @@
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Shell("dfrgui.exe")
     End Sub
+
+
+    'Subjected to change button names!
+
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
 

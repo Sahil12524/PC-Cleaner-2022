@@ -21,3 +21,10 @@ E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Debug\net6.0-windows\ref\PC Clea
 E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Debug\net6.0-windows\PC_Cleaner_2022.MainPage.resources
 E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Debug\net6.0-windows\PC_Cleaner_2022.ssInstructions.resources
 E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Debug\net6.0-windows\PC_Cleaner_2022.HomeView.resources
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Debug\net6.0-windows\PC_Cleaner_2022.AboutView.resources
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Debug\net6.0-windows\PC_Cleaner_2022.BasicToolsView.resources
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Debug\net6.0-windows\PC_Cleaner_2022.GamesOptimizationView.resources
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Debug\net6.0-windows\PC_Cleaner_2022.NetToolsView.resources
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Debug\net6.0-windows\PC_Cleaner_2022.OtherOptionsView.resources
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Debug\net6.0-windows\PC_Cleaner_2022.PowerOptionsView.resources
+E:\Users\sahil\source\repos\PC Cleaner 2022\obj\Debug\net6.0-windows\PC_Cleaner_2022.WhatsNewView.resources

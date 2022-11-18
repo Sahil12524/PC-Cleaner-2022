@@ -1,6 +1,6 @@
 ﻿Public Class ssInstructions
 
-    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub ssInstructions_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GC.Collect()
         GC.WaitForPendingFinalizers()
         GC.Collect()
@@ -16,7 +16,7 @@
         panel.Show()
     End Sub
 
-    Private Sub Form2_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+    Private Sub ssInstructions_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Me.Dispose()
         MainPage.Show()
         'PictureBox1.Image.Dispose()
@@ -31,7 +31,7 @@
         GC.Collect()
     End Sub
 
-    Private Sub Form2_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
+    Private Sub ssInstructions_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
         Me.Dispose()
         'PictureBox1.Image.Dispose()
         'PictureBox2.Image.Dispose()
