@@ -22,21 +22,130 @@ Partial Class GamesOptimizationView
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(GamesOptimizationView))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.DisableHpetBtn = New System.Windows.Forms.Button()
+        Me.ISLCBtn = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.RichTextBox3 = New System.Windows.Forms.RichTextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SplitContainer1.Panel1.SuspendLayout()
+        Me.SplitContainer1.Panel2.SuspendLayout()
+        Me.SplitContainer1.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.SplitContainer1)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(800, 450)
         Me.Panel1.TabIndex = 1
+        '
+        'SplitContainer1
+        '
+        Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SplitContainer1.Location = New System.Drawing.Point(0, 55)
+        Me.SplitContainer1.Name = "SplitContainer1"
+        '
+        'SplitContainer1.Panel1
+        '
+        Me.SplitContainer1.Panel1.Controls.Add(Me.Panel3)
+        '
+        'SplitContainer1.Panel2
+        '
+        Me.SplitContainer1.Panel2.AutoScroll = True
+        Me.SplitContainer1.Panel2.Controls.Add(Me.RichTextBox3)
+        Me.SplitContainer1.Size = New System.Drawing.Size(800, 395)
+        Me.SplitContainer1.SplitterDistance = 498
+        Me.SplitContainer1.TabIndex = 4
+        '
+        'Panel3
+        '
+        Me.Panel3.AutoScroll = True
+        Me.Panel3.Controls.Add(Me.DisableHpetBtn)
+        Me.Panel3.Controls.Add(Me.ISLCBtn)
+        Me.Panel3.Controls.Add(Me.Button2)
+        Me.Panel3.Controls.Add(Me.Button4)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(498, 395)
+        Me.Panel3.TabIndex = 0
+        '
+        'DisableHpetBtn
+        '
+        Me.DisableHpetBtn.AutoEllipsis = True
+        Me.DisableHpetBtn.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.DisableHpetBtn.Location = New System.Drawing.Point(3, 16)
+        Me.DisableHpetBtn.Name = "DisableHpetBtn"
+        Me.DisableHpetBtn.Size = New System.Drawing.Size(486, 59)
+        Me.DisableHpetBtn.TabIndex = 0
+        Me.DisableHpetBtn.Text = "Disable HPET"
+        Me.DisableHpetBtn.UseVisualStyleBackColor = True
+        '
+        'ISLCBtn
+        '
+        Me.ISLCBtn.AutoEllipsis = True
+        Me.ISLCBtn.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ISLCBtn.Location = New System.Drawing.Point(3, 81)
+        Me.ISLCBtn.Name = "ISLCBtn"
+        Me.ISLCBtn.Size = New System.Drawing.Size(486, 59)
+        Me.ISLCBtn.TabIndex = 2
+        Me.ISLCBtn.Text = "Intelligent Standby list cleaner (ISLC)"
+        Me.ISLCBtn.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.AutoEllipsis = True
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button2.Location = New System.Drawing.Point(3, 211)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(486, 59)
+        Me.Button2.TabIndex = 1
+        Me.Button2.Text = "Screenshot Way Instructions"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button4.Location = New System.Drawing.Point(3, 146)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(486, 59)
+        Me.Button4.TabIndex = 3
+        Me.Button4.Text = "Restart dwm.exe (Desktop Window Manager)"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'RichTextBox3
+        '
+        Me.RichTextBox3.BackColor = System.Drawing.SystemColors.Control
+        Me.RichTextBox3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RichTextBox3.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.RichTextBox3.Location = New System.Drawing.Point(0, 0)
+        Me.RichTextBox3.Name = "RichTextBox3"
+        Me.RichTextBox3.ReadOnly = True
+        Me.RichTextBox3.Size = New System.Drawing.Size(298, 395)
+        Me.RichTextBox3.TabIndex = 0
+        Me.RichTextBox3.Text = resources.GetString("RichTextBox3.Text")
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.Label1)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(800, 55)
+        Me.Panel2.TabIndex = 1
         '
         'Label1
         '
@@ -49,15 +158,6 @@ Partial Class GamesOptimizationView
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Game Optimization"
         '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(800, 55)
-        Me.Panel2.TabIndex = 1
-        '
         'GamesOptimizationView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -67,6 +167,11 @@ Partial Class GamesOptimizationView
         Me.Name = "GamesOptimizationView"
         Me.Text = "GamesOptimizationView"
         Me.Panel1.ResumeLayout(False)
+        Me.SplitContainer1.Panel1.ResumeLayout(False)
+        Me.SplitContainer1.Panel2.ResumeLayout(False)
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainer1.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
@@ -76,4 +181,11 @@ Partial Class GamesOptimizationView
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label1 As Label
+    Friend WithEvents SplitContainer1 As SplitContainer
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents DisableHpetBtn As Button
+    Friend WithEvents ISLCBtn As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents RichTextBox3 As RichTextBox
 End Class

@@ -57,4 +57,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value>Hello!
+Thanks for using my software, 
+If this software helped you by any way, please consider donation,
+or
+help me getting subscribers as it will make my channel grow faster.
+Press that subscribe button to help me out.</value>
+  </data>
 </root>

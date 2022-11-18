@@ -23,25 +23,52 @@ Partial Class BasicToolsView
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.TempRemoveBtn = New System.Windows.Forms.Button()
         Me.SSDTrimBtn = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.WindowsUpdateCacheBtn = New System.Windows.Forms.Button()
+        Me.CheckDiskErrorBtn = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
-        Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.TableLayoutPanel1.SuspendLayout()
+        Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.TableLayoutPanel2)
         Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(800, 450)
         Me.Panel1.TabIndex = 0
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.Label1)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(800, 55)
+        Me.Panel2.TabIndex = 0
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 23.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(165, 42)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Basic Tools"
         '
         'GroupBox1
         '
@@ -89,25 +116,72 @@ Partial Class BasicToolsView
         Me.SSDTrimBtn.Text = "SSD Trim Only C Drive"
         Me.SSDTrimBtn.UseVisualStyleBackColor = True
         '
-        'Panel2
+        'TableLayoutPanel2
         '
-        Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(800, 55)
-        Me.Panel2.TabIndex = 0
+        Me.TableLayoutPanel2.AutoSize = True
+        Me.TableLayoutPanel2.ColumnCount = 2
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.Controls.Add(Me.Button1, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.Button2, 1, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.WindowsUpdateCacheBtn, 1, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.CheckDiskErrorBtn, 0, 1)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(0, 55)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 2
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(800, 395)
+        Me.TableLayoutPanel2.TabIndex = 14
         '
-        'Label1
+        'Button1
         '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 23.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(165, 42)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Basic Tools"
+        Me.Button1.AutoEllipsis = True
+        Me.Button1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button1.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button1.Location = New System.Drawing.Point(3, 3)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(394, 191)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Temp Files Remove"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.AutoEllipsis = True
+        Me.Button2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Button2.Location = New System.Drawing.Point(403, 200)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(394, 192)
+        Me.Button2.TabIndex = 3
+        Me.Button2.Text = "SSD Trim Only C Drive"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'WindowsUpdateCacheBtn
+        '
+        Me.WindowsUpdateCacheBtn.AutoEllipsis = True
+        Me.WindowsUpdateCacheBtn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.WindowsUpdateCacheBtn.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.WindowsUpdateCacheBtn.Location = New System.Drawing.Point(403, 3)
+        Me.WindowsUpdateCacheBtn.Name = "WindowsUpdateCacheBtn"
+        Me.WindowsUpdateCacheBtn.Size = New System.Drawing.Size(394, 191)
+        Me.WindowsUpdateCacheBtn.TabIndex = 0
+        Me.WindowsUpdateCacheBtn.Text = "Windows Update Cache Remove"
+        Me.WindowsUpdateCacheBtn.UseVisualStyleBackColor = True
+        '
+        'CheckDiskErrorBtn
+        '
+        Me.CheckDiskErrorBtn.AutoEllipsis = True
+        Me.CheckDiskErrorBtn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CheckDiskErrorBtn.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CheckDiskErrorBtn.Location = New System.Drawing.Point(3, 200)
+        Me.CheckDiskErrorBtn.Name = "CheckDiskErrorBtn"
+        Me.CheckDiskErrorBtn.Size = New System.Drawing.Size(394, 192)
+        Me.CheckDiskErrorBtn.TabIndex = 2
+        Me.CheckDiskErrorBtn.Text = "Check Disk Errors Only C Drive"
+        Me.CheckDiskErrorBtn.UseVisualStyleBackColor = True
         '
         'BasicToolsView
         '
@@ -118,9 +192,11 @@ Partial Class BasicToolsView
         Me.Name = "BasicToolsView"
         Me.Text = "BasicToolsView"
         Me.Panel1.ResumeLayout(False)
-        Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.TableLayoutPanel1.ResumeLayout(False)
+        Me.TableLayoutPanel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -132,4 +208,9 @@ Partial Class BasicToolsView
     Friend WithEvents SSDTrimBtn As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Label1 As Label
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents WindowsUpdateCacheBtn As Button
+    Friend WithEvents CheckDiskErrorBtn As Button
 End Class
