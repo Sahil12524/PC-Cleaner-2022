@@ -135,7 +135,7 @@ Partial Class MainPage
         Me.TabControl1.Controls.Add(Me.TabPage6)
         Me.TabControl1.HotTrack = True
         Me.TabControl1.ItemSize = New System.Drawing.Size(90, 30)
-        Me.TabControl1.Location = New System.Drawing.Point(0, 0)
+        Me.TabControl1.Location = New System.Drawing.Point(45, 15)
         Me.TabControl1.Multiline = True
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.RightToLeftLayout = True
@@ -816,13 +816,14 @@ Partial Class MainPage
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
         Me.Panel7.Name = "Panel7"
+        Me.Panel7.Padding = New System.Windows.Forms.Padding(0, 15, 0, 0)
         Me.Panel7.Size = New System.Drawing.Size(189, 581)
         Me.Panel7.TabIndex = 14
         '
         'btnAbout
         '
         Me.btnAbout.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnAbout.Location = New System.Drawing.Point(0, 290)
+        Me.btnAbout.Location = New System.Drawing.Point(0, 299)
         Me.btnAbout.Name = "btnAbout"
         Me.btnAbout.Size = New System.Drawing.Size(189, 35)
         Me.btnAbout.TabIndex = 7
@@ -832,7 +833,7 @@ Partial Class MainPage
         'btnWhatsNew
         '
         Me.btnWhatsNew.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnWhatsNew.Location = New System.Drawing.Point(0, 249)
+        Me.btnWhatsNew.Location = New System.Drawing.Point(0, 258)
         Me.btnWhatsNew.Name = "btnWhatsNew"
         Me.btnWhatsNew.Size = New System.Drawing.Size(189, 35)
         Me.btnWhatsNew.TabIndex = 6
@@ -842,7 +843,7 @@ Partial Class MainPage
         'btnOtherOptions
         '
         Me.btnOtherOptions.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnOtherOptions.Location = New System.Drawing.Point(0, 208)
+        Me.btnOtherOptions.Location = New System.Drawing.Point(0, 217)
         Me.btnOtherOptions.Name = "btnOtherOptions"
         Me.btnOtherOptions.Size = New System.Drawing.Size(189, 35)
         Me.btnOtherOptions.TabIndex = 5
@@ -852,7 +853,7 @@ Partial Class MainPage
         'btnGameOptimization
         '
         Me.btnGameOptimization.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnGameOptimization.Location = New System.Drawing.Point(0, 167)
+        Me.btnGameOptimization.Location = New System.Drawing.Point(0, 176)
         Me.btnGameOptimization.Name = "btnGameOptimization"
         Me.btnGameOptimization.Size = New System.Drawing.Size(189, 35)
         Me.btnGameOptimization.TabIndex = 4
@@ -862,7 +863,7 @@ Partial Class MainPage
         'btnPowerOptions
         '
         Me.btnPowerOptions.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnPowerOptions.Location = New System.Drawing.Point(0, 126)
+        Me.btnPowerOptions.Location = New System.Drawing.Point(0, 135)
         Me.btnPowerOptions.Name = "btnPowerOptions"
         Me.btnPowerOptions.Size = New System.Drawing.Size(189, 35)
         Me.btnPowerOptions.TabIndex = 3
@@ -872,7 +873,7 @@ Partial Class MainPage
         'btnNetTools
         '
         Me.btnNetTools.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnNetTools.Location = New System.Drawing.Point(0, 85)
+        Me.btnNetTools.Location = New System.Drawing.Point(0, 94)
         Me.btnNetTools.Name = "btnNetTools"
         Me.btnNetTools.Size = New System.Drawing.Size(189, 35)
         Me.btnNetTools.TabIndex = 2
@@ -882,7 +883,7 @@ Partial Class MainPage
         'btnBasicTools
         '
         Me.btnBasicTools.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnBasicTools.Location = New System.Drawing.Point(0, 44)
+        Me.btnBasicTools.Location = New System.Drawing.Point(0, 53)
         Me.btnBasicTools.Name = "btnBasicTools"
         Me.btnBasicTools.Size = New System.Drawing.Size(189, 35)
         Me.btnBasicTools.TabIndex = 1
@@ -892,7 +893,7 @@ Partial Class MainPage
         'btnHome
         '
         Me.btnHome.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnHome.Location = New System.Drawing.Point(0, 3)
+        Me.btnHome.Location = New System.Drawing.Point(0, 12)
         Me.btnHome.Name = "btnHome"
         Me.btnHome.Size = New System.Drawing.Size(189, 35)
         Me.btnHome.TabIndex = 0
@@ -906,7 +907,8 @@ Partial Class MainPage
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel8.Location = New System.Drawing.Point(189, 0)
         Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(808, 581)
+        Me.Panel8.Padding = New System.Windows.Forms.Padding(20)
+        Me.Panel8.Size = New System.Drawing.Size(1025, 581)
         Me.Panel8.TabIndex = 15
         '
         'MainPage
@@ -916,7 +918,7 @@ Partial Class MainPage
         Me.AutoScroll = True
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(997, 581)
+        Me.ClientSize = New System.Drawing.Size(1214, 581)
         Me.Controls.Add(Me.Panel8)
         Me.Controls.Add(Me.Panel7)
         Me.DoubleBuffered = True
