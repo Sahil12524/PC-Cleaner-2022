@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class MainPage
 
     'Dim rs As New Resizer
 
@@ -122,7 +122,7 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Hide()
-        Form2.Show()
+        ssInstructions.Show()
         GC.Collect()
         GC.WaitForPendingFinalizers()
         GC.Collect()

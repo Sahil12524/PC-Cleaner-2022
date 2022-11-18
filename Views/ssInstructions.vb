@@ -1,4 +1,4 @@
-﻿Public Class Form2
+﻿Public Class ssInstructions
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         GC.Collect()
@@ -18,14 +18,14 @@
 
     Private Sub Form2_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         Me.Dispose()
-        Form1.Show()
+        MainPage.Show()
         'PictureBox1.Image.Dispose()
         'PictureBox2.Image.Dispose()
         'PictureBox3.Image.Dispose()
         'PictureBox4.Image.Dispose()
         'PictureBox5.Image.Dispose()
         'PictureBox6.Image.Dispose()
-        Form1.Refresh()
+        MainPage.Refresh()
         GC.Collect()
         GC.WaitForPendingFinalizers()
         GC.Collect()
@@ -39,7 +39,7 @@
         'PictureBox4.Image.Dispose()
         'PictureBox5.Image.Dispose()
         'PictureBox6.Image.Dispose()
-        Form1.Refresh()
+        MainPage.Refresh()
         GC.Collect()
         GC.WaitForPendingFinalizers()
         GC.Collect()
