@@ -24,19 +24,19 @@ Partial Class OtherOptionsView
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.NeedHelpBtn = New System.Windows.Forms.Button()
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.NeedHelpBtn = New System.Windows.Forms.Button()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.btnDskDfrag = New System.Windows.Forms.Button()
         Me.Panel7 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Panel8 = New System.Windows.Forms.Panel()
-        Me.btnDskDfrag = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
@@ -48,13 +48,13 @@ Partial Class OtherOptionsView
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel9.SuspendLayout()
+        Me.Panel11.SuspendLayout()
         Me.Panel10.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
-        Me.Panel11.SuspendLayout()
         Me.Panel6.SuspendLayout()
+        Me.Panel8.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
-        Me.Panel8.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
@@ -80,12 +80,33 @@ Partial Class OtherOptionsView
         Me.Panel9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel9.Controls.Add(Me.Panel10)
         Me.Panel9.Controls.Add(Me.Panel11)
+        Me.Panel9.Controls.Add(Me.Panel10)
         Me.Panel9.Location = New System.Drawing.Point(1, 323)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(1438, 125)
         Me.Panel9.TabIndex = 18
+        '
+        'Panel11
+        '
+        Me.Panel11.Controls.Add(Me.NeedHelpBtn)
+        Me.Panel11.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel11.Location = New System.Drawing.Point(1077, 0)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(359, 123)
+        Me.Panel11.TabIndex = 17
+        '
+        'NeedHelpBtn
+        '
+        Me.NeedHelpBtn.AutoEllipsis = True
+        Me.NeedHelpBtn.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.NeedHelpBtn.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.NeedHelpBtn.Location = New System.Drawing.Point(0, 0)
+        Me.NeedHelpBtn.Name = "NeedHelpBtn"
+        Me.NeedHelpBtn.Size = New System.Drawing.Size(359, 123)
+        Me.NeedHelpBtn.TabIndex = 11
+        Me.NeedHelpBtn.Text = "Need Help ?"
+        Me.NeedHelpBtn.UseVisualStyleBackColor = True
         '
         'Panel10
         '
@@ -134,38 +155,38 @@ Partial Class OtherOptionsView
         Me.Label8.Text = "This is the oldest video tutorial where I demonstrated the working of this softwa" &
     "re." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "If you don't know how it works see the video."
         '
-        'Panel11
-        '
-        Me.Panel11.Controls.Add(Me.NeedHelpBtn)
-        Me.Panel11.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel11.Location = New System.Drawing.Point(1077, 0)
-        Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(359, 123)
-        Me.Panel11.TabIndex = 17
-        '
-        'NeedHelpBtn
-        '
-        Me.NeedHelpBtn.AutoEllipsis = True
-        Me.NeedHelpBtn.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.NeedHelpBtn.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.NeedHelpBtn.Location = New System.Drawing.Point(0, 0)
-        Me.NeedHelpBtn.Name = "NeedHelpBtn"
-        Me.NeedHelpBtn.Size = New System.Drawing.Size(359, 123)
-        Me.NeedHelpBtn.TabIndex = 11
-        Me.NeedHelpBtn.Text = "Need Help ?"
-        Me.NeedHelpBtn.UseVisualStyleBackColor = True
-        '
         'Panel6
         '
         Me.Panel6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel6.Controls.Add(Me.Panel7)
         Me.Panel6.Controls.Add(Me.Panel8)
+        Me.Panel6.Controls.Add(Me.Panel7)
         Me.Panel6.Location = New System.Drawing.Point(1, 192)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(1438, 125)
         Me.Panel6.TabIndex = 16
+        '
+        'Panel8
+        '
+        Me.Panel8.Controls.Add(Me.btnDskDfrag)
+        Me.Panel8.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel8.Location = New System.Drawing.Point(1077, 0)
+        Me.Panel8.Name = "Panel8"
+        Me.Panel8.Size = New System.Drawing.Size(359, 123)
+        Me.Panel8.TabIndex = 17
+        '
+        'btnDskDfrag
+        '
+        Me.btnDskDfrag.AutoEllipsis = True
+        Me.btnDskDfrag.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnDskDfrag.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnDskDfrag.Location = New System.Drawing.Point(0, 0)
+        Me.btnDskDfrag.Name = "btnDskDfrag"
+        Me.btnDskDfrag.Size = New System.Drawing.Size(359, 123)
+        Me.btnDskDfrag.TabIndex = 14
+        Me.btnDskDfrag.Text = "Disk Defragment"
+        Me.btnDskDfrag.UseVisualStyleBackColor = True
         '
         'Panel7
         '
@@ -215,34 +236,13 @@ Partial Class OtherOptionsView
     "les faster" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Gamers will get noticeable performance benefits of doing this daily." &
     ""
         '
-        'Panel8
-        '
-        Me.Panel8.Controls.Add(Me.btnDskDfrag)
-        Me.Panel8.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel8.Location = New System.Drawing.Point(1077, 0)
-        Me.Panel8.Name = "Panel8"
-        Me.Panel8.Size = New System.Drawing.Size(359, 123)
-        Me.Panel8.TabIndex = 17
-        '
-        'btnDskDfrag
-        '
-        Me.btnDskDfrag.AutoEllipsis = True
-        Me.btnDskDfrag.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnDskDfrag.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnDskDfrag.Location = New System.Drawing.Point(0, 0)
-        Me.btnDskDfrag.Name = "btnDskDfrag"
-        Me.btnDskDfrag.Size = New System.Drawing.Size(359, 123)
-        Me.btnDskDfrag.TabIndex = 14
-        Me.btnDskDfrag.Text = "Disk Defragment"
-        Me.btnDskDfrag.UseVisualStyleBackColor = True
-        '
         'Panel3
         '
         Me.Panel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Panel3.Controls.Add(Me.Panel4)
         Me.Panel3.Controls.Add(Me.Panel5)
+        Me.Panel3.Controls.Add(Me.Panel4)
         Me.Panel3.Location = New System.Drawing.Point(0, 61)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1439, 125)
@@ -346,15 +346,15 @@ Partial Class OtherOptionsView
         Me.Text = "OtherOptionsView"
         Me.Panel1.ResumeLayout(False)
         Me.Panel9.ResumeLayout(False)
+        Me.Panel11.ResumeLayout(False)
         Me.Panel10.ResumeLayout(False)
         Me.TableLayoutPanel3.ResumeLayout(False)
         Me.TableLayoutPanel3.PerformLayout()
-        Me.Panel11.ResumeLayout(False)
         Me.Panel6.ResumeLayout(False)
+        Me.Panel8.ResumeLayout(False)
         Me.Panel7.ResumeLayout(False)
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
-        Me.Panel8.ResumeLayout(False)
         Me.Panel3.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
