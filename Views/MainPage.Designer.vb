@@ -51,7 +51,7 @@ Partial Class MainPage
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Padding = New System.Windows.Forms.Padding(0, 15, 0, 0)
-        Me.Panel7.Size = New System.Drawing.Size(189, 581)
+        Me.Panel7.Size = New System.Drawing.Size(189, 641)
         Me.Panel7.TabIndex = 14
         '
         'btnAbout
@@ -141,7 +141,7 @@ Partial Class MainPage
         Me.Panel8.Location = New System.Drawing.Point(189, 0)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Padding = New System.Windows.Forms.Padding(20)
-        Me.Panel8.Size = New System.Drawing.Size(1025, 581)
+        Me.Panel8.Size = New System.Drawing.Size(921, 641)
         Me.Panel8.TabIndex = 15
         '
         'MainPage
@@ -151,7 +151,7 @@ Partial Class MainPage
         Me.AutoScroll = True
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(1214, 581)
+        Me.ClientSize = New System.Drawing.Size(1110, 641)
         Me.Controls.Add(Me.Panel8)
         Me.Controls.Add(Me.Panel7)
         Me.DoubleBuffered = True
