@@ -28,8 +28,8 @@ Partial Class GamesOptimizationView
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.DisableHpetBtn = New System.Windows.Forms.Button()
         Me.ISLCBtn = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.btnScreenshotWayInstructions = New System.Windows.Forms.Button()
+        Me.btnRestartDWM = New System.Windows.Forms.Button()
         Me.RichTextBox3 = New System.Windows.Forms.RichTextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -75,8 +75,8 @@ Partial Class GamesOptimizationView
         Me.Panel3.AutoScroll = True
         Me.Panel3.Controls.Add(Me.DisableHpetBtn)
         Me.Panel3.Controls.Add(Me.ISLCBtn)
-        Me.Panel3.Controls.Add(Me.Button2)
-        Me.Panel3.Controls.Add(Me.Button4)
+        Me.Panel3.Controls.Add(Me.btnScreenshotWayInstructions)
+        Me.Panel3.Controls.Add(Me.btnRestartDWM)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
@@ -105,26 +105,27 @@ Partial Class GamesOptimizationView
         Me.ISLCBtn.Text = "Intelligent Standby list cleaner (ISLC)"
         Me.ISLCBtn.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnScreenshotWayInstructions
         '
-        Me.Button2.AutoEllipsis = True
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.Location = New System.Drawing.Point(3, 211)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(486, 59)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Screenshot Way Instructions"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnScreenshotWayInstructions.AutoEllipsis = True
+        Me.btnScreenshotWayInstructions.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnScreenshotWayInstructions.Location = New System.Drawing.Point(3, 211)
+        Me.btnScreenshotWayInstructions.Name = "btnScreenshotWayInstructions"
+        Me.btnScreenshotWayInstructions.Size = New System.Drawing.Size(486, 59)
+        Me.btnScreenshotWayInstructions.TabIndex = 1
+        Me.btnScreenshotWayInstructions.Text = "Screenshot Way Instructions"
+        Me.btnScreenshotWayInstructions.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnRestartDWM
         '
-        Me.Button4.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button4.Location = New System.Drawing.Point(3, 146)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(486, 59)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Restart dwm.exe (Desktop Window Manager)"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnRestartDWM.AutoEllipsis = True
+        Me.btnRestartDWM.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnRestartDWM.Location = New System.Drawing.Point(3, 146)
+        Me.btnRestartDWM.Name = "btnRestartDWM"
+        Me.btnRestartDWM.Size = New System.Drawing.Size(486, 59)
+        Me.btnRestartDWM.TabIndex = 3
+        Me.btnRestartDWM.Text = "Restart dwm.exe (Desktop Window Manager)"
+        Me.btnRestartDWM.UseVisualStyleBackColor = True
         '
         'RichTextBox3
         '
@@ -185,7 +186,7 @@ Partial Class GamesOptimizationView
     Friend WithEvents Panel3 As Panel
     Friend WithEvents DisableHpetBtn As Button
     Friend WithEvents ISLCBtn As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnScreenshotWayInstructions As Button
+    Friend WithEvents btnRestartDWM As Button
     Friend WithEvents RichTextBox3 As RichTextBox
 End Class

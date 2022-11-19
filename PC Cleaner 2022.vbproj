@@ -4,12 +4,13 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <RootNamespace>PC_Cleaner_2022</RootNamespace>
-    <StartupObject>Sub Main</StartupObject>
+    <StartupObject>PC_Cleaner_2022.My.MyApplication</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
     <ApplicationIcon>cleaning broom.ico</ApplicationIcon>
     <SignAssembly>true</SignAssembly>
+    <UseWPF>False</UseWPF>
 
   </PropertyGroup>
 

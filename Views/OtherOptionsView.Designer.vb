@@ -23,16 +23,16 @@ Partial Class OtherOptionsView
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel4 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnDiskCleanup = New System.Windows.Forms.Button()
         Me.NeedHelpBtn = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnDskDfrag = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel4.SuspendLayout()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -45,26 +45,6 @@ Partial Class OtherOptionsView
         Me.Panel1.Size = New System.Drawing.Size(800, 450)
         Me.Panel1.TabIndex = 1
         '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(800, 55)
-        Me.Panel2.TabIndex = 2
-        '
-        'Label1
-        '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 23.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(214, 42)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Other Options"
-        '
         'TableLayoutPanel4
         '
         Me.TableLayoutPanel4.AutoScroll = True
@@ -74,7 +54,7 @@ Partial Class OtherOptionsView
         Me.TableLayoutPanel4.Controls.Add(Me.Label3, 1, 1)
         Me.TableLayoutPanel4.Controls.Add(Me.btnDiskCleanup, 0, 0)
         Me.TableLayoutPanel4.Controls.Add(Me.NeedHelpBtn, 1, 0)
-        Me.TableLayoutPanel4.Controls.Add(Me.Button3, 0, 1)
+        Me.TableLayoutPanel4.Controls.Add(Me.btnDskDfrag, 0, 1)
         Me.TableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel4.Location = New System.Drawing.Point(0, 55)
         Me.TableLayoutPanel4.Name = "TableLayoutPanel4"
@@ -120,16 +100,37 @@ Partial Class OtherOptionsView
         Me.NeedHelpBtn.Text = "Need Help ?"
         Me.NeedHelpBtn.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnDskDfrag
         '
-        Me.Button3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Button3.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button3.Location = New System.Drawing.Point(3, 200)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(394, 192)
-        Me.Button3.TabIndex = 14
-        Me.Button3.Text = "Disk Defragment"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnDskDfrag.AutoEllipsis = True
+        Me.btnDskDfrag.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnDskDfrag.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnDskDfrag.Location = New System.Drawing.Point(3, 200)
+        Me.btnDskDfrag.Name = "btnDskDfrag"
+        Me.btnDskDfrag.Size = New System.Drawing.Size(394, 192)
+        Me.btnDskDfrag.TabIndex = 14
+        Me.btnDskDfrag.Text = "Disk Defragment"
+        Me.btnDskDfrag.UseVisualStyleBackColor = True
+        '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.Label1)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(800, 55)
+        Me.Panel2.TabIndex = 2
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 23.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(214, 42)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Other Options"
         '
         'OtherOptionsView
         '
@@ -140,10 +141,10 @@ Partial Class OtherOptionsView
         Me.Name = "OtherOptionsView"
         Me.Text = "OtherOptionsView"
         Me.Panel1.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
         Me.TableLayoutPanel4.ResumeLayout(False)
         Me.TableLayoutPanel4.PerformLayout()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -155,5 +156,5 @@ Partial Class OtherOptionsView
     Friend WithEvents Label3 As Label
     Friend WithEvents btnDiskCleanup As Button
     Friend WithEvents NeedHelpBtn As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnDskDfrag As Button
 End Class

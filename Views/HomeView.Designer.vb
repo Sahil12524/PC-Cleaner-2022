@@ -48,7 +48,7 @@ Partial Class HomeView
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnUpdateCheck = New System.Windows.Forms.Button()
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -376,23 +376,23 @@ Partial Class HomeView
         '
         'Panel6
         '
-        Me.Panel6.Controls.Add(Me.Button2)
+        Me.Panel6.Controls.Add(Me.btnUpdateCheck)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel6.Location = New System.Drawing.Point(0, 350)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(800, 100)
         Me.Panel6.TabIndex = 9
         '
-        'Button2
+        'btnUpdateCheck
         '
-        Me.Button2.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Button2.Location = New System.Drawing.Point(603, 57)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(194, 40)
-        Me.Button2.TabIndex = 0
-        Me.Button2.Text = "Check for latest releases"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnUpdateCheck.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnUpdateCheck.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnUpdateCheck.Location = New System.Drawing.Point(603, 57)
+        Me.btnUpdateCheck.Name = "btnUpdateCheck"
+        Me.btnUpdateCheck.Size = New System.Drawing.Size(194, 40)
+        Me.btnUpdateCheck.TabIndex = 0
+        Me.btnUpdateCheck.Text = "Check for latest releases"
+        Me.btnUpdateCheck.UseVisualStyleBackColor = True
         '
         'TableLayoutPanel5
         '
@@ -498,7 +498,7 @@ Partial Class HomeView
     Friend WithEvents Label5 As Label
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btnUpdateCheck As Button
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label

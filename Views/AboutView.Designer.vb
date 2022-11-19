@@ -24,21 +24,21 @@ Partial Class AboutView
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AboutView))
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel6 = New System.Windows.Forms.TableLayoutPanel()
         Me.TableLayoutPanel7 = New System.Windows.Forms.TableLayoutPanel()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.pbDonate = New System.Windows.Forms.PictureBox()
+        Me.pbYTSubscribe = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
         Me.TableLayoutPanel6.SuspendLayout()
         Me.TableLayoutPanel7.SuspendLayout()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbDonate, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.pbYTSubscribe, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -50,26 +50,6 @@ Partial Class AboutView
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(800, 450)
         Me.Panel1.TabIndex = 1
-        '
-        'Panel2
-        '
-        Me.Panel2.Controls.Add(Me.Label1)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(800, 55)
-        Me.Panel2.TabIndex = 1
-        '
-        'Label1
-        '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 23.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(103, 42)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "About"
         '
         'TableLayoutPanel6
         '
@@ -92,8 +72,8 @@ Partial Class AboutView
         Me.TableLayoutPanel7.AutoScroll = True
         Me.TableLayoutPanel7.ColumnCount = 1
         Me.TableLayoutPanel7.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel7.Controls.Add(Me.PictureBox5, 0, 1)
-        Me.TableLayoutPanel7.Controls.Add(Me.PictureBox3, 0, 2)
+        Me.TableLayoutPanel7.Controls.Add(Me.pbDonate, 0, 1)
+        Me.TableLayoutPanel7.Controls.Add(Me.pbYTSubscribe, 0, 2)
         Me.TableLayoutPanel7.Controls.Add(Me.PictureBox4, 0, 0)
         Me.TableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TableLayoutPanel7.Location = New System.Drawing.Point(3, 3)
@@ -105,27 +85,27 @@ Partial Class AboutView
         Me.TableLayoutPanel7.Size = New System.Drawing.Size(394, 389)
         Me.TableLayoutPanel7.TabIndex = 9
         '
-        'PictureBox5
+        'pbDonate
         '
-        Me.PictureBox5.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox5.Image = Global.PC_Cleaner_2022.My.Resources.Resources.PayPal_Donate_Button_Transparent
-        Me.PictureBox5.Location = New System.Drawing.Point(3, 132)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(388, 149)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox5.TabIndex = 7
-        Me.PictureBox5.TabStop = False
+        Me.pbDonate.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pbDonate.Image = Global.PC_Cleaner_2022.My.Resources.Resources.PayPal_Donate_Button_Transparent
+        Me.pbDonate.Location = New System.Drawing.Point(3, 132)
+        Me.pbDonate.Name = "pbDonate"
+        Me.pbDonate.Size = New System.Drawing.Size(388, 149)
+        Me.pbDonate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbDonate.TabIndex = 7
+        Me.pbDonate.TabStop = False
         '
-        'PictureBox3
+        'pbYTSubscribe
         '
-        Me.PictureBox3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.PictureBox3.Image = Global.PC_Cleaner_2022.My.Resources.Resources.subscribe_PNG29
-        Me.PictureBox3.Location = New System.Drawing.Point(3, 287)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(388, 99)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 5
-        Me.PictureBox3.TabStop = False
+        Me.pbYTSubscribe.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.pbYTSubscribe.Image = Global.PC_Cleaner_2022.My.Resources.Resources.subscribe_PNG29
+        Me.pbYTSubscribe.Location = New System.Drawing.Point(3, 287)
+        Me.pbYTSubscribe.Name = "pbYTSubscribe"
+        Me.pbYTSubscribe.Size = New System.Drawing.Size(388, 99)
+        Me.pbYTSubscribe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.pbYTSubscribe.TabIndex = 5
+        Me.pbYTSubscribe.TabStop = False
         '
         'PictureBox4
         '
@@ -151,6 +131,26 @@ Partial Class AboutView
         Me.RichTextBox1.TabIndex = 3
         Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
+        'Panel2
+        '
+        Me.Panel2.Controls.Add(Me.Label1)
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(800, 55)
+        Me.Panel2.TabIndex = 1
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 23.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(103, 42)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "About"
+        '
         'AboutView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -160,13 +160,13 @@ Partial Class AboutView
         Me.Name = "AboutView"
         Me.Text = "AboutView"
         Me.Panel1.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
         Me.TableLayoutPanel6.ResumeLayout(False)
         Me.TableLayoutPanel7.ResumeLayout(False)
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbDonate, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.pbYTSubscribe, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel2.ResumeLayout(False)
+        Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -176,8 +176,8 @@ Partial Class AboutView
     Friend WithEvents Label1 As Label
     Friend WithEvents TableLayoutPanel6 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel7 As TableLayoutPanel
-    Friend WithEvents PictureBox5 As PictureBox
-    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents pbDonate As PictureBox
+    Friend WithEvents pbYTSubscribe As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents RichTextBox1 As RichTextBox
 End Class
