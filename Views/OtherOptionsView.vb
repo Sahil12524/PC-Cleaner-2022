@@ -24,4 +24,8 @@
     Private Sub btnDskDfrag_Click(sender As Object, e As EventArgs) Handles btnDskDfrag.Click
         Shell("dfrgui.exe")
     End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
 End Class
