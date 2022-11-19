@@ -136,12 +136,11 @@ Partial Class MainPage
         '
         'Panel8
         '
-        Me.Panel8.AutoScroll = True
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel8.Location = New System.Drawing.Point(189, 0)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Padding = New System.Windows.Forms.Padding(20)
-        Me.Panel8.Size = New System.Drawing.Size(921, 641)
+        Me.Panel8.Size = New System.Drawing.Size(995, 641)
         Me.Panel8.TabIndex = 15
         '
         'MainPage
@@ -151,7 +150,7 @@ Partial Class MainPage
         Me.AutoScroll = True
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.Control
-        Me.ClientSize = New System.Drawing.Size(1110, 641)
+        Me.ClientSize = New System.Drawing.Size(1184, 641)
         Me.Controls.Add(Me.Panel8)
         Me.Controls.Add(Me.Panel7)
         Me.DoubleBuffered = True

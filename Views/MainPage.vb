@@ -16,7 +16,7 @@ Public Class MainPage
         GC.WaitForPendingFinalizers()
         GC.Collect()
         switchPanel(HomeView)
-        Me.MinimumSize = New Size(1126, 680)
+        'Me.MinimumSize = New Size(1126, 680)
     End Sub
     Sub switchPanel(ByVal panel As Form)
         Panel8.Controls.Clear()

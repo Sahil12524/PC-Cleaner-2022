@@ -57,4 +57,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Label9.Text" xml:space="preserve">
+    <value>Use this buton to test the packet loss by pinging.
+By default it ping's google.com you can change the ping server to other website too.
+Note: Do not use this while downloading is running in background, results in false packet loss.</value>
+  </data>
 </root>

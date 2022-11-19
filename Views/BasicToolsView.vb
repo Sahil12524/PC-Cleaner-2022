@@ -18,4 +18,5 @@
     Private Sub SSDTrimBtn_Click(sender As Object, e As EventArgs) Handles SSDTrimBtn.Click
         Process.Start("bin/SSDOPTIMIZE.bat")
     End Sub
+
 End Class
