@@ -91,21 +91,20 @@ Partial Class BasicToolsView
         '
         'Panel6
         '
-        Me.Panel6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel6.Controls.Add(Me.Panel14)
         Me.Panel6.Controls.Add(Me.Panel11)
-        Me.Panel6.Location = New System.Drawing.Point(1, 454)
+        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel6.Location = New System.Drawing.Point(0, 430)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1392, 125)
+        Me.Panel6.Size = New System.Drawing.Size(1393, 125)
         Me.Panel6.TabIndex = 18
         '
         'Panel14
         '
         Me.Panel14.Controls.Add(Me.SSDTrimBtn)
         Me.Panel14.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel14.Location = New System.Drawing.Point(1031, 0)
+        Me.Panel14.Location = New System.Drawing.Point(1032, 0)
         Me.Panel14.Name = "Panel14"
         Me.Panel14.Size = New System.Drawing.Size(359, 123)
         Me.Panel14.TabIndex = 5
@@ -143,7 +142,7 @@ Partial Class BasicToolsView
         Me.TableLayoutPanel2.RowCount = 2
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 28.45528!))
         Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 71.54472!))
-        Me.TableLayoutPanel2.Size = New System.Drawing.Size(501, 123)
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(499, 123)
         Me.TableLayoutPanel2.TabIndex = 2
         '
         'Label9
@@ -153,7 +152,7 @@ Partial Class BasicToolsView
         Me.Label9.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label9.Location = New System.Drawing.Point(3, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(228, 35)
+        Me.Label9.Size = New System.Drawing.Size(228, 34)
         Me.Label9.TabIndex = 0
         Me.Label9.Text = "SSD Trim Only C Drive"
         '
@@ -162,9 +161,9 @@ Partial Class BasicToolsView
         Me.Label8.AutoSize = True
         Me.Label8.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label8.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label8.Location = New System.Drawing.Point(3, 35)
+        Me.Label8.Location = New System.Drawing.Point(3, 34)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(495, 88)
+        Me.Label8.Size = New System.Drawing.Size(493, 89)
         Me.Label8.TabIndex = 1
         Me.Label8.Text = "Every SSD requires to trim once every 2 days to maintain" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "the health and performa" &
     "nce of the SSD." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Note: Only SSD user should use this! Hard Drive users will not " &
@@ -172,21 +171,20 @@ Partial Class BasicToolsView
         '
         'Panel5
         '
-        Me.Panel5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel5.Controls.Add(Me.Panel13)
         Me.Panel5.Controls.Add(Me.Panel10)
-        Me.Panel5.Location = New System.Drawing.Point(1, 323)
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel5.Location = New System.Drawing.Point(0, 305)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1392, 125)
+        Me.Panel5.Size = New System.Drawing.Size(1393, 125)
         Me.Panel5.TabIndex = 17
         '
         'Panel13
         '
         Me.Panel13.Controls.Add(Me.CheckDiskErrorBtn)
         Me.Panel13.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel13.Location = New System.Drawing.Point(1031, 0)
+        Me.Panel13.Location = New System.Drawing.Point(1032, 0)
         Me.Panel13.Name = "Panel13"
         Me.Panel13.Size = New System.Drawing.Size(359, 123)
         Me.Panel13.TabIndex = 4
@@ -252,12 +250,11 @@ Partial Class BasicToolsView
         '
         'Panel4
         '
-        Me.Panel4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel4.Controls.Add(Me.Panel12)
         Me.Panel4.Controls.Add(Me.Panel9)
-        Me.Panel4.Location = New System.Drawing.Point(0, 192)
+        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel4.Location = New System.Drawing.Point(0, 180)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(1393, 125)
         Me.Panel4.TabIndex = 16
@@ -332,12 +329,11 @@ Partial Class BasicToolsView
         '
         'Panel3
         '
-        Me.Panel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel3.Controls.Add(Me.Panel8)
         Me.Panel3.Controls.Add(Me.Panel7)
-        Me.Panel3.Location = New System.Drawing.Point(0, 61)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(0, 55)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1393, 125)
         Me.Panel3.TabIndex = 15

@@ -16,7 +16,7 @@ Public Class MainPage
         GC.WaitForPendingFinalizers()
         GC.Collect()
         switchPanel(HomeView)
-        'Me.MinimumSize = New Size(1126, 680)
+        Me.Size = New Size(1200, 680)
     End Sub
     Sub switchPanel(ByVal panel As Form)
         Panel8.Controls.Clear()
@@ -105,5 +105,15 @@ Public Class MainPage
         GC.Collect()
         GC.WaitForPendingFinalizers()
         GC.Collect()
+    End Sub
+
+    Private Sub btnMoreInfo_Click(sender As Object, e As EventArgs) Handles btnMoreInfo.Click
+        If Me.Size = New Size(606, 680) Then
+            btnMoreInfo.Text = ">"
+            Me.Size = New Size(1200, 680)
+        Else
+            btnMoreInfo.Text = "<"
+            Me.Size = New Size(606, 680)
+        End If
     End Sub
 End Class

@@ -38,12 +38,12 @@ Partial Class OtherOptionsView
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.btnDiskCleanup = New System.Windows.Forms.Button()
         Me.Panel4 = New System.Windows.Forms.Panel()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Panel5 = New System.Windows.Forms.Panel()
-        Me.btnDiskCleanup = New System.Windows.Forms.Button()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
@@ -56,9 +56,9 @@ Partial Class OtherOptionsView
         Me.Panel7.SuspendLayout()
         Me.TableLayoutPanel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
+        Me.Panel5.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
-        Me.Panel5.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -77,21 +77,20 @@ Partial Class OtherOptionsView
         '
         'Panel9
         '
-        Me.Panel9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel9.Controls.Add(Me.Panel11)
         Me.Panel9.Controls.Add(Me.Panel10)
-        Me.Panel9.Location = New System.Drawing.Point(1, 323)
+        Me.Panel9.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel9.Location = New System.Drawing.Point(0, 305)
         Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(1438, 125)
+        Me.Panel9.Size = New System.Drawing.Size(1439, 125)
         Me.Panel9.TabIndex = 18
         '
         'Panel11
         '
         Me.Panel11.Controls.Add(Me.NeedHelpBtn)
         Me.Panel11.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel11.Location = New System.Drawing.Point(1077, 0)
+        Me.Panel11.Location = New System.Drawing.Point(1078, 0)
         Me.Panel11.Name = "Panel11"
         Me.Panel11.Size = New System.Drawing.Size(359, 123)
         Me.Panel11.TabIndex = 17
@@ -157,21 +156,20 @@ Partial Class OtherOptionsView
         '
         'Panel6
         '
-        Me.Panel6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel6.Controls.Add(Me.Panel8)
         Me.Panel6.Controls.Add(Me.Panel7)
-        Me.Panel6.Location = New System.Drawing.Point(1, 192)
+        Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel6.Location = New System.Drawing.Point(0, 180)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1438, 125)
+        Me.Panel6.Size = New System.Drawing.Size(1439, 125)
         Me.Panel6.TabIndex = 16
         '
         'Panel8
         '
         Me.Panel8.Controls.Add(Me.btnDskDfrag)
         Me.Panel8.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel8.Location = New System.Drawing.Point(1077, 0)
+        Me.Panel8.Location = New System.Drawing.Point(1078, 0)
         Me.Panel8.Name = "Panel8"
         Me.Panel8.Size = New System.Drawing.Size(359, 123)
         Me.Panel8.TabIndex = 17
@@ -238,15 +236,35 @@ Partial Class OtherOptionsView
         '
         'Panel3
         '
-        Me.Panel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Panel3.Controls.Add(Me.Panel5)
         Me.Panel3.Controls.Add(Me.Panel4)
-        Me.Panel3.Location = New System.Drawing.Point(0, 61)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel3.Location = New System.Drawing.Point(0, 55)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1439, 125)
         Me.Panel3.TabIndex = 15
+        '
+        'Panel5
+        '
+        Me.Panel5.Controls.Add(Me.btnDiskCleanup)
+        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel5.Location = New System.Drawing.Point(1078, 0)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(359, 123)
+        Me.Panel5.TabIndex = 17
+        '
+        'btnDiskCleanup
+        '
+        Me.btnDiskCleanup.AutoEllipsis = True
+        Me.btnDiskCleanup.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnDiskCleanup.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnDiskCleanup.Location = New System.Drawing.Point(0, 0)
+        Me.btnDiskCleanup.Name = "btnDiskCleanup"
+        Me.btnDiskCleanup.Size = New System.Drawing.Size(359, 123)
+        Me.btnDiskCleanup.TabIndex = 12
+        Me.btnDiskCleanup.Text = "Disk Clean-up"
+        Me.btnDiskCleanup.UseVisualStyleBackColor = True
         '
         'Panel4
         '
@@ -295,27 +313,6 @@ Partial Class OtherOptionsView
         Me.Label4.Text = "This is advanced built in Windows cleaner, cleans most of the junk." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "This cleans " &
     "Internet, Windows.old and many more things."
         '
-        'Panel5
-        '
-        Me.Panel5.Controls.Add(Me.btnDiskCleanup)
-        Me.Panel5.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Panel5.Location = New System.Drawing.Point(1078, 0)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(359, 123)
-        Me.Panel5.TabIndex = 17
-        '
-        'btnDiskCleanup
-        '
-        Me.btnDiskCleanup.AutoEllipsis = True
-        Me.btnDiskCleanup.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnDiskCleanup.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnDiskCleanup.Location = New System.Drawing.Point(0, 0)
-        Me.btnDiskCleanup.Name = "btnDiskCleanup"
-        Me.btnDiskCleanup.Size = New System.Drawing.Size(359, 123)
-        Me.btnDiskCleanup.TabIndex = 12
-        Me.btnDiskCleanup.Text = "Disk Clean-up"
-        Me.btnDiskCleanup.UseVisualStyleBackColor = True
-        '
         'Panel2
         '
         Me.Panel2.Controls.Add(Me.Label1)
@@ -356,10 +353,10 @@ Partial Class OtherOptionsView
         Me.TableLayoutPanel2.ResumeLayout(False)
         Me.TableLayoutPanel2.PerformLayout()
         Me.Panel3.ResumeLayout(False)
+        Me.Panel5.ResumeLayout(False)
         Me.Panel4.ResumeLayout(False)
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.TableLayoutPanel1.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         Me.ResumeLayout(False)

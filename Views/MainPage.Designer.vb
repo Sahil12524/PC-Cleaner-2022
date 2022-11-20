@@ -33,7 +33,10 @@ Partial Class MainPage
         Me.btnBasicTools = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
         Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnMoreInfo = New System.Windows.Forms.Button()
         Me.Panel7.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel7
@@ -143,6 +146,25 @@ Partial Class MainPage
         Me.Panel8.Size = New System.Drawing.Size(995, 641)
         Me.Panel8.TabIndex = 15
         '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.btnMoreInfo)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel1.Location = New System.Drawing.Point(189, 0)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(995, 28)
+        Me.Panel1.TabIndex = 16
+        '
+        'btnMoreInfo
+        '
+        Me.btnMoreInfo.Dock = System.Windows.Forms.DockStyle.Right
+        Me.btnMoreInfo.Location = New System.Drawing.Point(963, 0)
+        Me.btnMoreInfo.Name = "btnMoreInfo"
+        Me.btnMoreInfo.Size = New System.Drawing.Size(32, 28)
+        Me.btnMoreInfo.TabIndex = 0
+        Me.btnMoreInfo.Text = ">"
+        Me.btnMoreInfo.UseVisualStyleBackColor = True
+        '
         'MainPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -151,6 +173,7 @@ Partial Class MainPage
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1184, 641)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Panel8)
         Me.Controls.Add(Me.Panel7)
         Me.DoubleBuffered = True
@@ -161,6 +184,7 @@ Partial Class MainPage
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PC Cleaner 2022"
         Me.Panel7.ResumeLayout(False)
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -174,4 +198,6 @@ Partial Class MainPage
     Friend WithEvents btnWhatsNew As Button
     Friend WithEvents btnOtherOptions As Button
     Friend WithEvents btnGameOptimization As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents btnMoreInfo As Button
 End Class
