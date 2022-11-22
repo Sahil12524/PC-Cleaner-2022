@@ -32,10 +32,10 @@ Partial Class MainPage
         Me.btnNetTools = New System.Windows.Forms.Button()
         Me.btnBasicTools = New System.Windows.Forms.Button()
         Me.btnHome = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnMoreInfo = New System.Windows.Forms.Button()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Panel7.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -60,6 +60,7 @@ Partial Class MainPage
         '
         'btnAbout
         '
+        Me.btnAbout.AutoEllipsis = True
         Me.btnAbout.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnAbout.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnAbout.Location = New System.Drawing.Point(0, 345)
@@ -71,6 +72,7 @@ Partial Class MainPage
         '
         'btnWhatsNew
         '
+        Me.btnWhatsNew.AutoEllipsis = True
         Me.btnWhatsNew.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnWhatsNew.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnWhatsNew.Location = New System.Drawing.Point(0, 300)
@@ -82,6 +84,7 @@ Partial Class MainPage
         '
         'btnOtherOptions
         '
+        Me.btnOtherOptions.AutoEllipsis = True
         Me.btnOtherOptions.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnOtherOptions.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnOtherOptions.Location = New System.Drawing.Point(0, 255)
@@ -93,6 +96,7 @@ Partial Class MainPage
         '
         'btnGameOptimization
         '
+        Me.btnGameOptimization.AutoEllipsis = True
         Me.btnGameOptimization.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnGameOptimization.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnGameOptimization.Location = New System.Drawing.Point(0, 210)
@@ -104,6 +108,7 @@ Partial Class MainPage
         '
         'btnPowerOptions
         '
+        Me.btnPowerOptions.AutoEllipsis = True
         Me.btnPowerOptions.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnPowerOptions.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnPowerOptions.Location = New System.Drawing.Point(0, 165)
@@ -115,6 +120,7 @@ Partial Class MainPage
         '
         'btnNetTools
         '
+        Me.btnNetTools.AutoEllipsis = True
         Me.btnNetTools.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnNetTools.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnNetTools.Location = New System.Drawing.Point(0, 120)
@@ -126,6 +132,7 @@ Partial Class MainPage
         '
         'btnBasicTools
         '
+        Me.btnBasicTools.AutoEllipsis = True
         Me.btnBasicTools.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnBasicTools.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnBasicTools.Location = New System.Drawing.Point(0, 75)
@@ -137,6 +144,7 @@ Partial Class MainPage
         '
         'btnHome
         '
+        Me.btnHome.AutoEllipsis = True
         Me.btnHome.Dock = System.Windows.Forms.DockStyle.Top
         Me.btnHome.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.btnHome.Location = New System.Drawing.Point(0, 30)
@@ -145,6 +153,14 @@ Partial Class MainPage
         Me.btnHome.TabIndex = 0
         Me.btnHome.Text = "Home"
         Me.btnHome.UseVisualStyleBackColor = True
+        '
+        'Panel2
+        '
+        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
+        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(189, 30)
+        Me.Panel2.TabIndex = 8
         '
         'Panel8
         '
@@ -174,19 +190,10 @@ Partial Class MainPage
         Me.btnMoreInfo.Text = ">"
         Me.btnMoreInfo.UseVisualStyleBackColor = True
         '
-        'Panel2
-        '
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(189, 30)
-        Me.Panel2.TabIndex = 8
-        '
         'MainPage
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
-        Me.AutoScroll = True
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.Control
         Me.ClientSize = New System.Drawing.Size(1184, 641)
@@ -197,6 +204,7 @@ Partial Class MainPage
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.HelpButton = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.MinimumSize = New System.Drawing.Size(606, 680)
         Me.Name = "MainPage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PC Cleaner 2022"
