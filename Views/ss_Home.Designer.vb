@@ -57,6 +57,7 @@ Partial Class ss_Home
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 514)
         Me.Controls.Add(Me.Panel4)
+        Me.DoubleBuffered = True
         Me.Name = "ss_Home"
         Me.Text = "ss_Home"
         Me.Panel4.ResumeLayout(False)

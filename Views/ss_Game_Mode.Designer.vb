@@ -107,6 +107,7 @@ Partial Class ss_Game_Mode
         Me.BackColor = System.Drawing.Color.MediumPurple
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Panel1)
+        Me.DoubleBuffered = True
         Me.Name = "ss_Game_Mode"
         Me.Text = "ss_Game_Mode"
         Me.Panel1.ResumeLayout(False)

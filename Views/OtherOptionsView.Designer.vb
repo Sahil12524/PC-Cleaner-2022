@@ -46,6 +46,7 @@ Partial Class OtherOptionsView
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel12 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel9.SuspendLayout()
         Me.Panel11.SuspendLayout()
@@ -60,6 +61,7 @@ Partial Class OtherOptionsView
         Me.Panel4.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.Panel12.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -68,11 +70,10 @@ Partial Class OtherOptionsView
         Me.Panel1.Controls.Add(Me.Panel9)
         Me.Panel1.Controls.Add(Me.Panel6)
         Me.Panel1.Controls.Add(Me.Panel3)
-        Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Location = New System.Drawing.Point(0, 55)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1439, 900)
+        Me.Panel1.Size = New System.Drawing.Size(1439, 504)
         Me.Panel1.TabIndex = 1
         '
         'Panel9
@@ -81,7 +82,7 @@ Partial Class OtherOptionsView
         Me.Panel9.Controls.Add(Me.Panel11)
         Me.Panel9.Controls.Add(Me.Panel10)
         Me.Panel9.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel9.Location = New System.Drawing.Point(0, 305)
+        Me.Panel9.Location = New System.Drawing.Point(0, 250)
         Me.Panel9.Name = "Panel9"
         Me.Panel9.Size = New System.Drawing.Size(1439, 125)
         Me.Panel9.TabIndex = 18
@@ -160,7 +161,7 @@ Partial Class OtherOptionsView
         Me.Panel6.Controls.Add(Me.Panel8)
         Me.Panel6.Controls.Add(Me.Panel7)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel6.Location = New System.Drawing.Point(0, 180)
+        Me.Panel6.Location = New System.Drawing.Point(0, 125)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(1439, 125)
         Me.Panel6.TabIndex = 16
@@ -240,7 +241,7 @@ Partial Class OtherOptionsView
         Me.Panel3.Controls.Add(Me.Panel5)
         Me.Panel3.Controls.Add(Me.Panel4)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(0, 55)
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1439, 125)
         Me.Panel3.TabIndex = 15
@@ -333,12 +334,23 @@ Partial Class OtherOptionsView
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Other Options"
         '
+        'Panel12
+        '
+        Me.Panel12.Controls.Add(Me.Panel1)
+        Me.Panel12.Controls.Add(Me.Panel2)
+        Me.Panel12.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel12.Location = New System.Drawing.Point(0, 0)
+        Me.Panel12.Name = "Panel12"
+        Me.Panel12.Size = New System.Drawing.Size(1439, 559)
+        Me.Panel12.TabIndex = 2
+        '
         'OtherOptionsView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1439, 900)
-        Me.Controls.Add(Me.Panel1)
+        Me.ClientSize = New System.Drawing.Size(1439, 559)
+        Me.Controls.Add(Me.Panel12)
+        Me.DoubleBuffered = True
         Me.Name = "OtherOptionsView"
         Me.Text = "OtherOptionsView"
         Me.Panel1.ResumeLayout(False)
@@ -359,6 +371,7 @@ Partial Class OtherOptionsView
         Me.TableLayoutPanel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.Panel12.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -387,4 +400,5 @@ Partial Class OtherOptionsView
     Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
     Friend WithEvents Label2 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents Panel12 As Panel
 End Class

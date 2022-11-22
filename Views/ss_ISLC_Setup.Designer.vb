@@ -56,6 +56,7 @@ Partial Class ss_ISLC_Setup
         Me.BackColor = System.Drawing.Color.MediumPurple
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Panel1)
+        Me.DoubleBuffered = True
         Me.Name = "ss_ISLC_Setup"
         Me.Text = "ss_ISLC_Setup"
         Me.Panel1.ResumeLayout(False)

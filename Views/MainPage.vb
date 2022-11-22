@@ -1,4 +1,5 @@
-﻿Imports Microsoft.Win32
+﻿Imports System.Runtime.InteropServices
+Imports Microsoft.Win32
 
 Public Class MainPage
 
@@ -18,6 +19,7 @@ Public Class MainPage
         switchPanel(HomeView)
         Me.Size = New Size(1200, 680)
     End Sub
+
     Sub switchPanel(ByVal panel As Form)
         Panel8.Controls.Clear()
         panel.TopLevel = False

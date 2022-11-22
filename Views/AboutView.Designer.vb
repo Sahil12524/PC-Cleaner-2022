@@ -32,6 +32,7 @@ Partial Class AboutView
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.TableLayoutPanel6.SuspendLayout()
         Me.TableLayoutPanel7.SuspendLayout()
@@ -39,16 +40,16 @@ Partial Class AboutView
         CType(Me.pbYTSubscribe, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.TableLayoutPanel6)
-        Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Location = New System.Drawing.Point(0, 55)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(800, 450)
+        Me.Panel1.Size = New System.Drawing.Size(1047, 595)
         Me.Panel1.TabIndex = 1
         '
         'TableLayoutPanel6
@@ -60,11 +61,11 @@ Partial Class AboutView
         Me.TableLayoutPanel6.Controls.Add(Me.TableLayoutPanel7, 0, 0)
         Me.TableLayoutPanel6.Controls.Add(Me.RichTextBox1, 1, 0)
         Me.TableLayoutPanel6.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TableLayoutPanel6.Location = New System.Drawing.Point(0, 55)
+        Me.TableLayoutPanel6.Location = New System.Drawing.Point(0, 0)
         Me.TableLayoutPanel6.Name = "TableLayoutPanel6"
         Me.TableLayoutPanel6.RowCount = 1
         Me.TableLayoutPanel6.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.TableLayoutPanel6.Size = New System.Drawing.Size(800, 395)
+        Me.TableLayoutPanel6.Size = New System.Drawing.Size(1047, 595)
         Me.TableLayoutPanel6.TabIndex = 2
         '
         'TableLayoutPanel7
@@ -82,16 +83,16 @@ Partial Class AboutView
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40.0!))
         Me.TableLayoutPanel7.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.81818!))
-        Me.TableLayoutPanel7.Size = New System.Drawing.Size(394, 389)
+        Me.TableLayoutPanel7.Size = New System.Drawing.Size(517, 589)
         Me.TableLayoutPanel7.TabIndex = 9
         '
         'pbDonate
         '
         Me.pbDonate.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pbDonate.Image = Global.PC_Cleaner_2022.My.Resources.Resources.PayPal_Donate_Button_Transparent
-        Me.pbDonate.Location = New System.Drawing.Point(3, 132)
+        Me.pbDonate.Location = New System.Drawing.Point(3, 199)
         Me.pbDonate.Name = "pbDonate"
-        Me.pbDonate.Size = New System.Drawing.Size(388, 149)
+        Me.pbDonate.Size = New System.Drawing.Size(511, 229)
         Me.pbDonate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pbDonate.TabIndex = 7
         Me.pbDonate.TabStop = False
@@ -100,9 +101,9 @@ Partial Class AboutView
         '
         Me.pbYTSubscribe.Dock = System.Windows.Forms.DockStyle.Fill
         Me.pbYTSubscribe.Image = Global.PC_Cleaner_2022.My.Resources.Resources.subscribe_PNG29
-        Me.pbYTSubscribe.Location = New System.Drawing.Point(3, 287)
+        Me.pbYTSubscribe.Location = New System.Drawing.Point(3, 434)
         Me.pbYTSubscribe.Name = "pbYTSubscribe"
-        Me.pbYTSubscribe.Size = New System.Drawing.Size(388, 99)
+        Me.pbYTSubscribe.Size = New System.Drawing.Size(511, 152)
         Me.pbYTSubscribe.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pbYTSubscribe.TabIndex = 5
         Me.pbYTSubscribe.TabStop = False
@@ -113,7 +114,7 @@ Partial Class AboutView
         Me.PictureBox4.Image = Global.PC_Cleaner_2022.My.Resources.Resources.cleaning_broom
         Me.PictureBox4.Location = New System.Drawing.Point(3, 3)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(388, 123)
+        Me.PictureBox4.Size = New System.Drawing.Size(511, 190)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 6
         Me.PictureBox4.TabStop = False
@@ -124,10 +125,10 @@ Partial Class AboutView
         Me.RichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RichTextBox1.Font = New System.Drawing.Font("Segoe UI", 16.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.RichTextBox1.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.RichTextBox1.Location = New System.Drawing.Point(403, 3)
+        Me.RichTextBox1.Location = New System.Drawing.Point(526, 3)
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.ReadOnly = True
-        Me.RichTextBox1.Size = New System.Drawing.Size(394, 389)
+        Me.RichTextBox1.Size = New System.Drawing.Size(518, 589)
         Me.RichTextBox1.TabIndex = 3
         Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
@@ -137,7 +138,7 @@ Partial Class AboutView
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(800, 55)
+        Me.Panel2.Size = New System.Drawing.Size(1047, 55)
         Me.Panel2.TabIndex = 1
         '
         'Label1
@@ -151,12 +152,23 @@ Partial Class AboutView
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "About"
         '
+        'Panel3
+        '
+        Me.Panel3.Controls.Add(Me.Panel1)
+        Me.Panel3.Controls.Add(Me.Panel2)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(1047, 650)
+        Me.Panel3.TabIndex = 2
+        '
         'AboutView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Panel1)
+        Me.ClientSize = New System.Drawing.Size(1047, 650)
+        Me.Controls.Add(Me.Panel3)
+        Me.DoubleBuffered = True
         Me.Name = "AboutView"
         Me.Text = "AboutView"
         Me.Panel1.ResumeLayout(False)
@@ -167,6 +179,7 @@ Partial Class AboutView
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -180,4 +193,5 @@ Partial Class AboutView
     Friend WithEvents pbYTSubscribe As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents Panel3 As Panel
 End Class

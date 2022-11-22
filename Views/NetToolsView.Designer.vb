@@ -54,6 +54,7 @@ Partial Class NetToolsView
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel15 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel11.SuspendLayout()
@@ -72,6 +73,7 @@ Partial Class NetToolsView
         Me.Panel7.SuspendLayout()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.Panel15.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -81,11 +83,10 @@ Partial Class NetToolsView
         Me.Panel1.Controls.Add(Me.Panel5)
         Me.Panel1.Controls.Add(Me.Panel4)
         Me.Panel1.Controls.Add(Me.Panel3)
-        Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Location = New System.Drawing.Point(0, 55)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1422, 613)
+        Me.Panel1.Size = New System.Drawing.Size(1422, 558)
         Me.Panel1.TabIndex = 1
         '
         'Panel6
@@ -94,7 +95,7 @@ Partial Class NetToolsView
         Me.Panel6.Controls.Add(Me.Panel11)
         Me.Panel6.Controls.Add(Me.Panel10)
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel6.Location = New System.Drawing.Point(0, 430)
+        Me.Panel6.Location = New System.Drawing.Point(0, 375)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(1422, 125)
         Me.Panel6.TabIndex = 18
@@ -174,7 +175,7 @@ Partial Class NetToolsView
         Me.Panel5.Controls.Add(Me.Panel12)
         Me.Panel5.Controls.Add(Me.Panel9)
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel5.Location = New System.Drawing.Point(0, 305)
+        Me.Panel5.Location = New System.Drawing.Point(0, 250)
         Me.Panel5.Name = "Panel5"
         Me.Panel5.Size = New System.Drawing.Size(1422, 125)
         Me.Panel5.TabIndex = 17
@@ -253,7 +254,7 @@ Partial Class NetToolsView
         Me.Panel4.Controls.Add(Me.Panel13)
         Me.Panel4.Controls.Add(Me.Panel8)
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel4.Location = New System.Drawing.Point(0, 180)
+        Me.Panel4.Location = New System.Drawing.Point(0, 125)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(1422, 125)
         Me.Panel4.TabIndex = 16
@@ -332,7 +333,7 @@ Partial Class NetToolsView
         Me.Panel3.Controls.Add(Me.Panel14)
         Me.Panel3.Controls.Add(Me.Panel7)
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel3.Location = New System.Drawing.Point(0, 55)
+        Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(1422, 125)
         Me.Panel3.TabIndex = 15
@@ -426,12 +427,23 @@ Partial Class NetToolsView
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Net Tools"
         '
+        'Panel15
+        '
+        Me.Panel15.Controls.Add(Me.Panel1)
+        Me.Panel15.Controls.Add(Me.Panel2)
+        Me.Panel15.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel15.Location = New System.Drawing.Point(0, 0)
+        Me.Panel15.Name = "Panel15"
+        Me.Panel15.Size = New System.Drawing.Size(1422, 613)
+        Me.Panel15.TabIndex = 2
+        '
         'NetToolsView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1422, 613)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Panel15)
+        Me.DoubleBuffered = True
         Me.Name = "NetToolsView"
         Me.Text = "NetToolsView"
         Me.Panel1.ResumeLayout(False)
@@ -457,6 +469,7 @@ Partial Class NetToolsView
         Me.TableLayoutPanel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.Panel15.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -492,4 +505,5 @@ Partial Class NetToolsView
     Friend WithEvents TableLayoutPanel3 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel4 As TableLayoutPanel
     Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents Panel15 As Panel
 End Class

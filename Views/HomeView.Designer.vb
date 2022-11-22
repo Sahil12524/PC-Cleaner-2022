@@ -42,13 +42,13 @@ Partial Class HomeView
         Me.PictureBox8 = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnUpdateCheck = New System.Windows.Forms.Button()
         Me.TableLayoutPanel5 = New System.Windows.Forms.TableLayoutPanel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel5.SuspendLayout()
         Me.TableLayoutPanel8.SuspendLayout()
         CType(Me.PictureBox7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -296,6 +296,17 @@ Partial Class HomeView
         Me.Panel3.Size = New System.Drawing.Size(1085, 100)
         Me.Panel3.TabIndex = 8
         '
+        'Label4
+        '
+        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 23.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.Location = New System.Drawing.Point(12, 9)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(101, 42)
+        Me.Label4.TabIndex = 1
+        Me.Label4.Text = "Home"
+        '
         'Panel6
         '
         Me.Panel6.Controls.Add(Me.Label3)
@@ -378,23 +389,13 @@ Partial Class HomeView
         Me.Label2.Text = "PC Cleaner 2022"
         Me.Label2.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label4
-        '
-        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI", 23.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label4.Location = New System.Drawing.Point(12, 9)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(101, 42)
-        Me.Label4.TabIndex = 1
-        Me.Label4.Text = "Home"
-        '
         'HomeView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1085, 562)
         Me.Controls.Add(Me.Panel2)
+        Me.DoubleBuffered = True
         Me.Name = "HomeView"
         Me.Text = "HomeView"
         Me.Panel5.ResumeLayout(False)

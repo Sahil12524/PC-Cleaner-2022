@@ -33,6 +33,7 @@ Partial Class GamesOptimizationView
         Me.RichTextBox3 = New System.Windows.Forms.RichTextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Panel4 = New System.Windows.Forms.Panel()
         Me.Panel1.SuspendLayout()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
@@ -40,22 +41,22 @@ Partial Class GamesOptimizationView
         Me.SplitContainer1.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.Panel4.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.SplitContainer1)
-        Me.Panel1.Controls.Add(Me.Panel2)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
+        Me.Panel1.Location = New System.Drawing.Point(0, 55)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(800, 450)
+        Me.Panel1.Size = New System.Drawing.Size(984, 550)
         Me.Panel1.TabIndex = 1
         '
         'SplitContainer1
         '
         Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.SplitContainer1.Location = New System.Drawing.Point(0, 55)
+        Me.SplitContainer1.Location = New System.Drawing.Point(0, 0)
         Me.SplitContainer1.Name = "SplitContainer1"
         '
         'SplitContainer1.Panel1
@@ -66,8 +67,8 @@ Partial Class GamesOptimizationView
         '
         Me.SplitContainer1.Panel2.AutoScroll = True
         Me.SplitContainer1.Panel2.Controls.Add(Me.RichTextBox3)
-        Me.SplitContainer1.Size = New System.Drawing.Size(800, 395)
-        Me.SplitContainer1.SplitterDistance = 498
+        Me.SplitContainer1.Size = New System.Drawing.Size(984, 550)
+        Me.SplitContainer1.SplitterDistance = 612
         Me.SplitContainer1.TabIndex = 4
         '
         'Panel3
@@ -80,7 +81,7 @@ Partial Class GamesOptimizationView
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(498, 395)
+        Me.Panel3.Size = New System.Drawing.Size(612, 550)
         Me.Panel3.TabIndex = 0
         '
         'DisableHpetBtn
@@ -135,7 +136,7 @@ Partial Class GamesOptimizationView
         Me.RichTextBox3.Location = New System.Drawing.Point(0, 0)
         Me.RichTextBox3.Name = "RichTextBox3"
         Me.RichTextBox3.ReadOnly = True
-        Me.RichTextBox3.Size = New System.Drawing.Size(298, 395)
+        Me.RichTextBox3.Size = New System.Drawing.Size(368, 550)
         Me.RichTextBox3.TabIndex = 0
         Me.RichTextBox3.Text = resources.GetString("RichTextBox3.Text")
         '
@@ -145,7 +146,7 @@ Partial Class GamesOptimizationView
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(800, 55)
+        Me.Panel2.Size = New System.Drawing.Size(984, 55)
         Me.Panel2.TabIndex = 1
         '
         'Label1
@@ -159,12 +160,23 @@ Partial Class GamesOptimizationView
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Game Optimization"
         '
+        'Panel4
+        '
+        Me.Panel4.Controls.Add(Me.Panel1)
+        Me.Panel4.Controls.Add(Me.Panel2)
+        Me.Panel4.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Panel4.Location = New System.Drawing.Point(0, 0)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(984, 605)
+        Me.Panel4.TabIndex = 2
+        '
         'GamesOptimizationView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Panel1)
+        Me.ClientSize = New System.Drawing.Size(984, 605)
+        Me.Controls.Add(Me.Panel4)
+        Me.DoubleBuffered = True
         Me.Name = "GamesOptimizationView"
         Me.Text = "GamesOptimizationView"
         Me.Panel1.ResumeLayout(False)
@@ -175,6 +187,7 @@ Partial Class GamesOptimizationView
         Me.Panel3.ResumeLayout(False)
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.Panel4.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -189,4 +202,5 @@ Partial Class GamesOptimizationView
     Friend WithEvents btnScreenshotWayInstructions As Button
     Friend WithEvents btnRestartDWM As Button
     Friend WithEvents RichTextBox3 As RichTextBox
+    Friend WithEvents Panel4 As Panel
 End Class

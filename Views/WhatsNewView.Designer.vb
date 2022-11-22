@@ -24,9 +24,9 @@ Partial Class WhatsNewView
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(WhatsNewView))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -40,6 +40,19 @@ Partial Class WhatsNewView
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(800, 450)
         Me.Panel1.TabIndex = 1
+        '
+        'RichTextBox2
+        '
+        Me.RichTextBox2.BackColor = System.Drawing.SystemColors.Control
+        Me.RichTextBox2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RichTextBox2.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.RichTextBox2.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.RichTextBox2.Location = New System.Drawing.Point(0, 55)
+        Me.RichTextBox2.Name = "RichTextBox2"
+        Me.RichTextBox2.ReadOnly = True
+        Me.RichTextBox2.Size = New System.Drawing.Size(800, 395)
+        Me.RichTextBox2.TabIndex = 3
+        Me.RichTextBox2.Text = resources.GetString("RichTextBox2.Text")
         '
         'Panel2
         '
@@ -61,25 +74,13 @@ Partial Class WhatsNewView
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "What's New"
         '
-        'RichTextBox2
-        '
-        Me.RichTextBox2.BackColor = System.Drawing.SystemColors.Control
-        Me.RichTextBox2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RichTextBox2.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.RichTextBox2.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.RichTextBox2.Location = New System.Drawing.Point(0, 55)
-        Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.ReadOnly = True
-        Me.RichTextBox2.Size = New System.Drawing.Size(800, 395)
-        Me.RichTextBox2.TabIndex = 3
-        Me.RichTextBox2.Text = resources.GetString("RichTextBox2.Text")
-        '
         'WhatsNewView
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.Panel1)
+        Me.DoubleBuffered = True
         Me.Name = "WhatsNewView"
         Me.Text = "WhatsNewView"
         Me.Panel1.ResumeLayout(False)
