@@ -36,6 +36,7 @@ Partial Class MainPage
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnMoreInfo = New System.Windows.Forms.Button()
+        Me.btnSettings = New System.Windows.Forms.Button()
         Me.Panel7.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -43,6 +44,7 @@ Partial Class MainPage
         'Panel7
         '
         Me.Panel7.AutoScroll = True
+        Me.Panel7.Controls.Add(Me.btnSettings)
         Me.Panel7.Controls.Add(Me.btnAbout)
         Me.Panel7.Controls.Add(Me.btnWhatsNew)
         Me.Panel7.Controls.Add(Me.btnOtherOptions)
@@ -68,6 +70,7 @@ Partial Class MainPage
         Me.btnAbout.Size = New System.Drawing.Size(189, 45)
         Me.btnAbout.TabIndex = 7
         Me.btnAbout.Text = "About"
+        Me.btnAbout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnAbout.UseVisualStyleBackColor = True
         '
         'btnWhatsNew
@@ -80,6 +83,7 @@ Partial Class MainPage
         Me.btnWhatsNew.Size = New System.Drawing.Size(189, 45)
         Me.btnWhatsNew.TabIndex = 6
         Me.btnWhatsNew.Text = "What's New"
+        Me.btnWhatsNew.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnWhatsNew.UseVisualStyleBackColor = True
         '
         'btnOtherOptions
@@ -92,6 +96,7 @@ Partial Class MainPage
         Me.btnOtherOptions.Size = New System.Drawing.Size(189, 45)
         Me.btnOtherOptions.TabIndex = 5
         Me.btnOtherOptions.Text = "Other Options"
+        Me.btnOtherOptions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnOtherOptions.UseVisualStyleBackColor = True
         '
         'btnGameOptimization
@@ -104,6 +109,7 @@ Partial Class MainPage
         Me.btnGameOptimization.Size = New System.Drawing.Size(189, 45)
         Me.btnGameOptimization.TabIndex = 4
         Me.btnGameOptimization.Text = "Game Optimization"
+        Me.btnGameOptimization.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnGameOptimization.UseVisualStyleBackColor = True
         '
         'btnPowerOptions
@@ -116,6 +122,7 @@ Partial Class MainPage
         Me.btnPowerOptions.Size = New System.Drawing.Size(189, 45)
         Me.btnPowerOptions.TabIndex = 3
         Me.btnPowerOptions.Text = "Power Options"
+        Me.btnPowerOptions.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnPowerOptions.UseVisualStyleBackColor = True
         '
         'btnNetTools
@@ -128,6 +135,7 @@ Partial Class MainPage
         Me.btnNetTools.Size = New System.Drawing.Size(189, 45)
         Me.btnNetTools.TabIndex = 2
         Me.btnNetTools.Text = "Net Tools"
+        Me.btnNetTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnNetTools.UseVisualStyleBackColor = True
         '
         'btnBasicTools
@@ -140,6 +148,7 @@ Partial Class MainPage
         Me.btnBasicTools.Size = New System.Drawing.Size(189, 45)
         Me.btnBasicTools.TabIndex = 1
         Me.btnBasicTools.Text = "Basic Tools"
+        Me.btnBasicTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnBasicTools.UseVisualStyleBackColor = True
         '
         'btnHome
@@ -152,6 +161,7 @@ Partial Class MainPage
         Me.btnHome.Size = New System.Drawing.Size(189, 45)
         Me.btnHome.TabIndex = 0
         Me.btnHome.Text = "Home"
+        Me.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnHome.UseVisualStyleBackColor = True
         '
         'Panel2
@@ -190,6 +200,18 @@ Partial Class MainPage
         Me.btnMoreInfo.Text = ">"
         Me.btnMoreInfo.UseVisualStyleBackColor = True
         '
+        'btnSettings
+        '
+        Me.btnSettings.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnSettings.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnSettings.Location = New System.Drawing.Point(0, 596)
+        Me.btnSettings.Name = "btnSettings"
+        Me.btnSettings.Size = New System.Drawing.Size(189, 45)
+        Me.btnSettings.TabIndex = 9
+        Me.btnSettings.Text = "Settings"
+        Me.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnSettings.UseVisualStyleBackColor = True
+        '
         'MainPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -226,4 +248,5 @@ Partial Class MainPage
     Friend WithEvents Panel1 As Panel
     Friend WithEvents btnMoreInfo As Button
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents btnSettings As Button
 End Class

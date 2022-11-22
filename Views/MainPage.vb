@@ -118,4 +118,11 @@ Public Class MainPage
             Me.Size = New Size(606, 680)
         End If
     End Sub
+
+    Private Sub btnSettings_Click(sender As Object, e As EventArgs) Handles btnSettings.Click
+        switchPanel(SettingsView)
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        GC.Collect()
+    End Sub
 End Class
