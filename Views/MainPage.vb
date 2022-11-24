@@ -113,8 +113,9 @@ Public Class MainPage
         If Me.Size = New Size(606, 680) Then
             btnMoreInfo.Text = ">"
             Me.Size = New Size(1200, 680)
-        Else
+        ElseIf Me.Size.Height > 606 And Me.Size.Width > 608 Then
             btnMoreInfo.Text = "<"
+            Me.WindowState = FormWindowState.Normal
             Me.Size = New Size(606, 680)
         End If
     End Sub
@@ -124,5 +125,26 @@ Public Class MainPage
         GC.Collect()
         GC.WaitForPendingFinalizers()
         GC.Collect()
+    End Sub
+
+    Private Sub MainPage_SizeChanged(sender As Object, e As EventArgs) Handles MyBase.SizeChanged
+        'If Me.Size = New Size(606, 680) Then
+        '    Me.Panel7.Hide()
+        'ElseIf Me.Size.Height > 606 And Me.Size.Width > 608 Then
+        '    Me.Panel7.Show()
+        'End If
+        If Me.Size = New Size(606, 680) Then
+            btnMoreInfo.Text = ">"
+        ElseIf Me.Size.Height > 606 And Me.Size.Width > 608 Then
+            btnMoreInfo.Text = "<"
+        End If
+    End Sub
+
+    Private Sub MainPage_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
+        If Me.Size = New Size(606, 680) Then
+            btnMoreInfo.Text = ">"
+        ElseIf Me.Size.Height > 606 And Me.Size.Width > 608 Then
+            btnMoreInfo.Text = "<"
+        End If
     End Sub
 End Class

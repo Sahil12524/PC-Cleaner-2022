@@ -255,7 +255,7 @@ Partial Class HomeView
         '
         'PictureBox5
         '
-        Me.PictureBox5.Dock = System.Windows.Forms.DockStyle.Right
+        Me.PictureBox5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox5.Image = Global.PC_Cleaner_2022.My.Resources.Resources.hello_47
         Me.PictureBox5.Location = New System.Drawing.Point(935, 3)
         Me.PictureBox5.Name = "PictureBox5"
@@ -266,7 +266,7 @@ Partial Class HomeView
         '
         'PictureBox8
         '
-        Me.PictureBox8.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PictureBox8.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.PictureBox8.Image = Global.PC_Cleaner_2022.My.Resources.Resources.pixel_Heart
         Me.PictureBox8.Location = New System.Drawing.Point(3, 3)
         Me.PictureBox8.Name = "PictureBox8"
@@ -277,8 +277,8 @@ Partial Class HomeView
         '
         'Label5
         '
+        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label5.AutoEllipsis = True
-        Me.Label5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.Label5.Font = New System.Drawing.Font("Unispace", 50.99999!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label5.Location = New System.Drawing.Point(152, 0)
         Me.Label5.Name = "Label5"

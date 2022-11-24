@@ -24,6 +24,7 @@ Partial Class MainPage
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainPage))
         Me.Panel7 = New System.Windows.Forms.Panel()
+        Me.btnSettings = New System.Windows.Forms.Button()
         Me.btnAbout = New System.Windows.Forms.Button()
         Me.btnWhatsNew = New System.Windows.Forms.Button()
         Me.btnOtherOptions = New System.Windows.Forms.Button()
@@ -36,7 +37,6 @@ Partial Class MainPage
         Me.Panel8 = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.btnMoreInfo = New System.Windows.Forms.Button()
-        Me.btnSettings = New System.Windows.Forms.Button()
         Me.Panel7.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -59,6 +59,18 @@ Partial Class MainPage
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(189, 641)
         Me.Panel7.TabIndex = 14
+        '
+        'btnSettings
+        '
+        Me.btnSettings.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.btnSettings.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btnSettings.Location = New System.Drawing.Point(0, 596)
+        Me.btnSettings.Name = "btnSettings"
+        Me.btnSettings.Size = New System.Drawing.Size(189, 45)
+        Me.btnSettings.TabIndex = 9
+        Me.btnSettings.Text = "Settings"
+        Me.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnSettings.UseVisualStyleBackColor = True
         '
         'btnAbout
         '
@@ -199,18 +211,6 @@ Partial Class MainPage
         Me.btnMoreInfo.TabIndex = 0
         Me.btnMoreInfo.Text = ">"
         Me.btnMoreInfo.UseVisualStyleBackColor = True
-        '
-        'btnSettings
-        '
-        Me.btnSettings.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.btnSettings.Font = New System.Drawing.Font("Segoe UI", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btnSettings.Location = New System.Drawing.Point(0, 596)
-        Me.btnSettings.Name = "btnSettings"
-        Me.btnSettings.Size = New System.Drawing.Size(189, 45)
-        Me.btnSettings.TabIndex = 9
-        Me.btnSettings.Text = "Settings"
-        Me.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btnSettings.UseVisualStyleBackColor = True
         '
         'MainPage
         '
